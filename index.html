@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phab — Store Revamp Plan | Growisto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       PASSWORD OVERLAY
+       ============================================================ -->
+  <div class="password-overlay" id="passwordOverlay">
+    <div class="password-card">
+      <div class="password-logos">
+        <span class="password-brand">Growisto</span>
+        <span class="password-divider">&times;</span>
+        <span class="password-brand">Phab</span>
+      </div>
+      <h2 class="password-subtitle">Store Revamp Plan</h2>
+      <p class="password-desc">This presentation contains proprietary analysis prepared exclusively for Phab.</p>
+      <form id="passwordForm">
+        <div class="password-input-group">
+          <input type="password" id="passwordInput" class="password-input" placeholder="Enter access code" autocomplete="off">
+        </div>
+        <button type="submit" class="password-submit">Access Presentation</button>
+        <p class="password-error" id="errorMsg">Incorrect access code. Please try again.</p>
+      </form>
+      <p class="text-muted text-small mt-24">Prepared by Growisto | February 2026</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MOBILE HEADER
+       ============================================================ -->
+  <div class="mobile-header" id="mobileHeader">
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+      <span></span><span></span><span></span>
+    </div>
+    <span class="mobile-title">Phab &mdash; Revamp Plan</span>
+  </div>
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- ============================================================
+       SIDEBAR NAVIGATION
+       ============================================================ -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-brand">
+        <span class="sidebar-growisto">Growisto</span>
+        <span class="sidebar-divider">&times;</span>
+        <span class="sidebar-client-name">Phab</span>
+      </div>
+      <div class="sidebar-project">Store Revamp Plan &amp; Proposal</div>
+    </div>
+    <div class="sidebar-nav">
+
+      <!-- 1. Agenda -->
+      <div class="nav-item active" data-tab="agenda">
+        <div class="nav-item-header" onclick="switchTab('agenda')">
+          <span class="nav-icon">&#128203;</span>
+          <span class="nav-label">Agenda</span>
+        </div>
+      </div>
+
+      <!-- 2. Impact & ROI -->
+      <div class="nav-item" data-tab="impact">
+        <div class="nav-item-header" onclick="switchTab('impact')">
+          <span class="nav-icon">&#128200;</span>
+          <span class="nav-label">Impact &amp; ROI</span>
+        </div>
+      </div>
+
+      <!-- 3. Plan of Action (expandable) -->
+      <div class="nav-item" data-tab="plan">
+        <div class="nav-item-header" onclick="switchTab('plan')">
+          <span class="nav-icon">&#128197;</span>
+          <span class="nav-label">Plan of Action</span>
+          <span class="nav-chevron" onclick="event.stopPropagation();toggleNavSubmenu(this.closest('.nav-item'))">&#9654;</span>
+        </div>
+        <div class="nav-submenu">
+          <div class="nav-sub-item" onclick="scrollToSection('plan','gantt-section')">
+            <span class="nav-sub-icon">&#128202;</span>
+            <span>12-Week Gantt Chart</span>
+          </div>
+          <div class="nav-sub-item" onclick="scrollToSection('plan','milestones')">
+            <span class="nav-sub-icon">&#127937;</span>
+            <span>Key Milestones</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. SOW / Features (expandable) -->
+      <div class="nav-item" data-tab="sow">
+        <div class="nav-item-header" onclick="switchTab('sow')">
+          <span class="nav-icon">&#9889;</span>
+          <span class="nav-label">SOW &amp; Features</span>
+          <span class="nav-chevron" onclick="event.stopPropagation();toggleNavSubmenu(this.closest('.nav-item'))">&#9654;</span>
+        </div>
+        <div class="nav-submenu">
+          <div class="nav-sub-item" onclick="scrollToSection('sow','theme-handles')">
+            <span class="nav-sub-icon">&#9989;</span>
+            <span>Theme Handles (17)</span>
+          </div>
+          <div class="nav-sub-item" onclick="scrollToSection('sow','custom-dev')">
+            <span class="nav-sub-icon">&#9881;</span>
+            <span>Custom Dev (9)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Theme Evaluation -->
+      <div class="nav-item" data-tab="themes">
+        <div class="nav-item-header" onclick="switchTab('themes')">
+          <span class="nav-icon">&#127912;</span>
+          <span class="nav-label">Theme Evaluation</span>
+        </div>
+      </div>
+
+      <!-- 6. Mockups -->
+      <div class="nav-item" data-tab="mockups">
+        <div class="nav-item-header" onclick="switchTab('mockups')">
+          <span class="nav-icon">&#128421;</span>
+          <span class="nav-label">Mockups</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="sidebar-footer">
+      <p>Prepared by <strong>Growisto</strong></p>
+      <p class="text-small text-muted">February 2026</p>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ============================================================
+         TAB 1: AGENDA
+         ============================================================ -->
+    <section class="tab-content active" id="tab-agenda">
+
+      <!-- Hero -->
+      <div class="agenda-hero">
+        <div class="agenda-hero-content">
+          <p class="agenda-hero-eyebrow">Growisto &times; Phab</p>
+          <h1>Website Conversion Growth Strategy</h1>
+          <p class="agenda-hero-sub">A data-driven plan to unlock higher conversions and grow revenue from your existing 89K monthly sessions.</p>
+        </div>
+      </div>
+
+      <!-- Journey Track -->
+      <div class="section-card">
+        <h2 class="section-title">Our Engagement Journey</h2>
+        <p class="section-subtitle">Where we are and what&rsquo;s coming next</p>
+        <div class="journey-track">
+          <div class="journey-step completed">
+            <div class="journey-node"><span class="journey-check">&#10003;</span></div>
+            <div class="journey-label">Discovery</div>
+            <div class="journey-detail">Initial call &amp; requirements gathering</div>
+          </div>
+          <div class="journey-connector done"></div>
+          <div class="journey-step completed">
+            <div class="journey-node"><span class="journey-check">&#10003;</span></div>
+            <div class="journey-label">CRO Audit</div>
+            <div class="journey-detail">GA4 funnel analysis, UX review, PageSpeed audit</div>
+          </div>
+          <div class="journey-connector done"></div>
+          <div class="journey-step completed">
+            <div class="journey-node"><span class="journey-check">&#10003;</span></div>
+            <div class="journey-label">Theme &amp; Feature Planning</div>
+            <div class="journey-detail">Theme evaluation, feature recommendations</div>
+          </div>
+          <div class="journey-connector active"></div>
+          <div class="journey-step current">
+            <div class="journey-node"><span class="journey-num">4</span></div>
+            <div class="journey-label">Plan Walkthrough</div>
+            <div class="journey-detail">Review plan, align on scope &amp; priorities</div>
+            <span class="journey-badge">You are here</span>
+          </div>
+          <div class="journey-connector upcoming"></div>
+          <div class="journey-step upcoming-step">
+            <div class="journey-node"><span class="journey-num">5</span></div>
+            <div class="journey-label">UI Mockup &amp; Finalization</div>
+            <div class="journey-detail">Visual mockups in chosen theme</div>
+          </div>
+          <div class="journey-connector upcoming"></div>
+          <div class="journey-step upcoming-step">
+            <div class="journey-node"><span class="journey-num">6</span></div>
+            <div class="journey-label">Agreement &amp; Implementation</div>
+            <div class="journey-detail">Scope lock, development, launch</div>
+          </div>
+        </div>
+        <div class="callout success mt-16">
+          <strong>Steps 1&ndash;3 complete.</strong> The CRO audit, theme evaluation, and feature planning are done. Today&rsquo;s call is Step 4 &mdash; we walk through the revamp plan together and align on scope.
+        </div>
+      </div>
+
+      <!-- Call Flow -->
+      <div class="section-card">
+        <h2 class="section-title">Today&rsquo;s Call Agenda</h2>
+        <p class="section-subtitle">What we&rsquo;ll cover on this call</p>
+        <div class="toc-grid">
+          <div class="toc-card highlight" onclick="switchTab('impact')">
+            <div class="toc-number">1</div>
+            <div class="toc-body">
+              <h3>Audit Walkthrough</h3>
+              <p>Quick summary of the CRO audit findings &mdash; funnel leaks, PageSpeed issues, and where revenue is being lost</p>
+            </div>
+            <span class="toc-arrow">&#8594;</span>
+          </div>
+          <div class="toc-card" onclick="switchTab('plan')">
+            <div class="toc-number">2</div>
+            <div class="toc-body">
+              <h3>Walkthrough of Revamp Plan</h3>
+              <p>Impact &amp; ROI projections, 12-week Gantt chart, SOW with all 26 features, and theme recommendation</p>
+            </div>
+            <span class="toc-arrow">&#8594;</span>
+          </div>
+          <div class="toc-card" onclick="switchTab('impact')">
+            <div class="toc-number">3</div>
+            <div class="toc-body">
+              <h3>Commercials &amp; Next Steps</h3>
+              <p>Investment, payment structure, timeline, and what happens after we align today</p>
+            </div>
+            <span class="toc-arrow">&#8594;</span>
+          </div>
+          <div class="toc-card">
+            <div class="toc-number">4</div>
+            <div class="toc-body">
+              <h3>Open Discussion</h3>
+              <p>Your questions, feedback, additional requirements, or anything else you&rsquo;d like to discuss</p>
+            </div>
+            <span class="toc-arrow">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story So Far -->
+      <div class="section-card">
+        <h2 class="section-title">The Story So Far</h2>
+        <p class="section-subtitle">Key findings from our CRO audit that drive this plan</p>
+        <div class="metric-grid">
+          <div class="metric-card">
+            <div class="metric-value">0.72%</div>
+            <div class="metric-label">Current Conversion Rate</div>
+            <div class="metric-sub">Benchmark: 2.5&ndash;4% (F&amp;B)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value tertiary">83.6%</div>
+            <div class="metric-label">PDP &rarr; ATC Drop</div>
+            <div class="metric-sub">Biggest funnel leak</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value danger">37</div>
+            <div class="metric-label">Mobile PageSpeed</div>
+            <div class="metric-sub">Target: 60+</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">89K</div>
+            <div class="metric-label">Monthly Sessions</div>
+            <div class="metric-sub">Source: GA4, Jan 2026</div>
+          </div>
+        </div>
+        <div class="callout info">
+          <strong>Full audit details are in the CRO Audit presentation</strong> shared separately. This plan focuses on what we&rsquo;re going to do about it and the expected impact.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         TAB 2: IMPACT & ROI
+         ============================================================ -->
+    <section class="tab-content" id="tab-impact">
+
+      <div class="tab-header">
+        <h1>Impact &amp; ROI</h1>
+        <p>What a conversion improvement means for Phab&rsquo;s revenue</p>
+      </div>
+
+      <div class="tab-body">
+
+        <!-- Current State -->
+        <div class="section-card">
+          <h2 class="section-title">Current State</h2>
+          <p class="section-subtitle">Source: GA4, January 2026</p>
+          <div class="metric-grid">
+            <div class="metric-card">
+              <div class="metric-value">&#8377;9.09L</div>
+              <div class="metric-label">Monthly Revenue</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">0.72%</div>
+              <div class="metric-label">Conversion Rate</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">89K</div>
+              <div class="metric-label">Monthly Sessions</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">~&#8377;1,400</div>
+              <div class="metric-label">Average Order Value</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversion Scenarios -->
+        <div class="section-card">
+          <h2 class="section-title">Conversion Improvement Scenarios</h2>
+          <p class="section-subtitle">What different levels of improvement mean for your revenue</p>
+
+          <div class="scenario-grid">
+            <div class="scenario-card">
+              <div class="scenario-label">Current</div>
+              <div class="scenario-cvr">0.72%</div>
+              <div class="scenario-revenue">&#8377;9.09L/mo</div>
+              <div class="scenario-gain none">Baseline</div>
+            </div>
+            <div class="scenario-card">
+              <div class="scenario-label">+8% Lift (Q1)</div>
+              <div class="scenario-cvr">0.78%</div>
+              <div class="scenario-revenue">&#8377;9.84L/mo</div>
+              <div class="scenario-gain">+&#8377;0.75L/mo</div>
+            </div>
+            <div class="scenario-card highlight">
+              <div class="scenario-label">+25% Lift (Q2)</div>
+              <div class="scenario-cvr">0.90%</div>
+              <div class="scenario-revenue">&#8377;11.34L/mo</div>
+              <div class="scenario-gain">+&#8377;2.25L/mo</div>
+            </div>
+            <div class="scenario-card">
+              <div class="scenario-label">+50% Lift (Q4)</div>
+              <div class="scenario-cvr">1.08%</div>
+              <div class="scenario-revenue">&#8377;13.61L/mo</div>
+              <div class="scenario-gain">+&#8377;4.52L/mo</div>
+            </div>
+          </div>
+
+          <p class="source-label mt-8">Source: GA4 Jan 2026 baseline &times; projected CR improvement. Revenue is a derived metric &mdash; depends on traffic &amp; AOV.</p>
+        </div>
+
+        <!-- Quarter-on-Quarter Projection -->
+        <div class="section-card">
+          <h2 class="section-title">Quarter-on-Quarter Revenue Projection</h2>
+          <p class="section-subtitle">Projected growth from 0.72% to 1.08% conversion rate over 4 quarters</p>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>KPI</th>
+                  <th>Baseline (Jan &rsquo;26)</th>
+                  <th>Q1 End (M3)</th>
+                  <th>Q2 End (M6)</th>
+                  <th>Q3 End (M9)</th>
+                  <th>Q4 End (M12)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Conversion Rate</strong></td>
+                  <td>0.72%</td>
+                  <td>0.78%</td>
+                  <td>0.90%</td>
+                  <td>1.00%</td>
+                  <td>1.08%</td>
+                </tr>
+                <tr>
+                  <td>QoQ CR Lift</td>
+                  <td>&mdash;</td>
+                  <td>+8%</td>
+                  <td>+15%</td>
+                  <td>+11%</td>
+                  <td>+8%</td>
+                </tr>
+                <tr>
+                  <td>Cumulative CR Lift</td>
+                  <td>&mdash;</td>
+                  <td>+8%</td>
+                  <td>+25%</td>
+                  <td>+39%</td>
+                  <td>+50%</td>
+                </tr>
+                <tr>
+                  <td>Monthly Purchases</td>
+                  <td>649</td>
+                  <td>703</td>
+                  <td>810</td>
+                  <td>900</td>
+                  <td>972</td>
+                </tr>
+                <tr>
+                  <td><strong>Monthly Revenue</strong></td>
+                  <td>&#8377;9.09L</td>
+                  <td>&#8377;9.84L</td>
+                  <td>&#8377;11.34L</td>
+                  <td>&#8377;12.60L</td>
+                  <td>&#8377;13.61L</td>
+                </tr>
+                <tr style="background: rgba(54,117,136,0.05);">
+                  <td><strong>Monthly Revenue Gain</strong></td>
+                  <td>&mdash;</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;0.75L</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;2.25L</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;3.51L</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;4.52L</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="source-label mt-12">Source: GA4 Jan 2026 baseline. Conversion Rate will be owned by Growisto; revenue is a derived metric dependent on traffic &amp; AOV.</p>
+        </div>
+
+        <!-- Payback -->
+        <div class="section-card">
+          <h2 class="section-title">Investment &amp; Payback</h2>
+          <p class="section-subtitle">How quickly the revamp pays for itself</p>
+
+          <div class="grid-2">
+            <div class="payback-card">
+              <div class="payback-number">&#8377;4.5L</div>
+              <div class="payback-unit">One-Time Investment</div>
+              <div class="payback-label">Growisto Fee (inclusive of migration + dev + customization)</div>
+              <div class="payback-detail">GST as applicable &bull; 12-week timeline &bull; Payment: 40/30/30</div>
+            </div>
+            <div class="payback-card" style="background: linear-gradient(135deg, #e35d34 0%, #c94d28 100%);">
+              <div class="payback-number">~2</div>
+              <div class="payback-unit">Months to Payback</div>
+              <div class="payback-label">At the moderate scenario (+&#8377;2.25L/mo gain)</div>
+              <div class="payback-detail">Every month of delay = &#8377;2.25L+ in unrealized revenue from your existing traffic</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Funnel Fixes -->
+        <div class="section-card">
+          <h2 class="section-title">Where the Gains Come From</h2>
+          <p class="section-subtitle">Every funnel leak mapped to a specific fix</p>
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Funnel Leak</th>
+                  <th>Current</th>
+                  <th>Problem</th>
+                  <th>Our Fix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>77% never reach PDP</strong></td>
+                  <td><span class="badge critical">Critical</span></td>
+                  <td>Weak homepage merchandising, non-clickable banners</td>
+                  <td>Hero CTAs, category tiles, best-sellers, mega menu</td>
+                </tr>
+                <tr>
+                  <td><strong>84% PDP &rarr; ATC drop</strong></td>
+                  <td><span class="badge critical">Critical</span></td>
+                  <td>No sticky ATC, no reviews, no trust signals, poor CTA</td>
+                  <td>Sticky ATC, reviews, protein badges, scarcity triggers</td>
+                </tr>
+                <tr>
+                  <td><strong>47% cart abandonment</strong></td>
+                  <td><span class="badge moderate">Moderate</span></td>
+                  <td>No recommendations, no trust badges, color mismatch</td>
+                  <td>Cart cross-sells, trust badges, consistent cart design</td>
+                </tr>
+                <tr>
+                  <td><strong>56% payment drop</strong></td>
+                  <td><span class="badge high">High</span></td>
+                  <td>Payment friction, hidden costs, limited options</td>
+                  <td>Checkout trust seals, BNPL, expanded payment methods</td>
+                </tr>
+                <tr>
+                  <td><strong>PageSpeed: 37/100</strong></td>
+                  <td><span class="badge critical">Critical</span></td>
+                  <td>Red on FCP, LCP, TBT, SI, TTFB</td>
+                  <td>Image optimization, JS/CSS minification, new theme</td>
+                </tr>
+                <tr>
+                  <td><strong>8/13 GA4 events missing</strong></td>
+                  <td><span class="badge high">High</span></td>
+                  <td>Can&rsquo;t measure what you can&rsquo;t see</td>
+                  <td>Full GA4/GTM implementation for all ecommerce events</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TAB 3: PLAN OF ACTION
+         ============================================================ -->
+    <section class="tab-content" id="tab-plan">
+
+      <div class="tab-header">
+        <h1>Plan of Action</h1>
+        <p>12-week implementation roadmap from kickoff to go-live</p>
+      </div>
+
+      <div class="tab-body">
+
+        <!-- Gantt Chart -->
+        <div class="section-card" id="gantt-section">
+          <h2 class="section-title">12-Week Implementation Roadmap</h2>
+          <p class="section-subtitle">Phased delivery ensures quick wins ship early while bigger changes develop in parallel</p>
+
+          <div class="gantt-wrapper">
+            <table class="gantt-table">
+              <thead>
+                <tr>
+                  <th>Phase</th>
+                  <th>W1</th>
+                  <th>W2</th>
+                  <th>W3</th>
+                  <th>W4</th>
+                  <th>W5</th>
+                  <th>W6</th>
+                  <th>W7</th>
+                  <th>W8</th>
+                  <th>W9</th>
+                  <th>W10</th>
+                  <th>W11</th>
+                  <th>W12</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Theme Setup &amp; Migration</td>
+                  <td><span class="gantt-bar setup"></span></td>
+                  <td><span class="gantt-bar setup"></span></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>GA4/GTM Analytics Setup</td>
+                  <td></td>
+                  <td><span class="gantt-bar analytics"></span></td>
+                  <td><span class="gantt-bar analytics"></span></td>
+                  <td><span class="gantt-bar analytics"></span></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Homepage &amp; Navigation</td>
+                  <td></td><td></td>
+                  <td><span class="gantt-bar homepage"></span></td>
+                  <td><span class="gantt-bar homepage"></span></td>
+                  <td><span class="gantt-bar homepage"></span></td>
+                  <td><span class="gantt-bar homepage"></span></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>PDP Enhancements</td>
+                  <td></td><td></td><td></td>
+                  <td><span class="gantt-bar pdp"></span></td>
+                  <td><span class="gantt-bar pdp"></span></td>
+                  <td><span class="gantt-bar pdp"></span></td>
+                  <td><span class="gantt-bar pdp"></span></td>
+                  <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Collection Page</td>
+                  <td></td><td></td><td></td><td></td>
+                  <td><span class="gantt-bar collection"></span></td>
+                  <td><span class="gantt-bar collection"></span></td>
+                  <td><span class="gantt-bar collection"></span></td>
+                  <td><span class="gantt-bar collection"></span></td>
+                  <td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Cart &amp; Checkout</td>
+                  <td></td><td></td><td></td><td></td><td></td>
+                  <td><span class="gantt-bar cart"></span></td>
+                  <td><span class="gantt-bar cart"></span></td>
+                  <td><span class="gantt-bar cart"></span></td>
+                  <td><span class="gantt-bar cart"></span></td>
+                  <td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Performance Optimization</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td><span class="gantt-bar performance"></span></td>
+                  <td><span class="gantt-bar performance"></span></td>
+                  <td><span class="gantt-bar performance"></span></td>
+                  <td><span class="gantt-bar performance"></span></td>
+                  <td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Content &amp; Static Pages</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td><span class="gantt-bar content"></span></td>
+                  <td><span class="gantt-bar content"></span></td>
+                  <td><span class="gantt-bar content"></span></td>
+                  <td></td><td></td>
+                </tr>
+                <tr>
+                  <td>App Integration</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td><span class="gantt-bar apps"></span></td>
+                  <td><span class="gantt-bar apps"></span></td>
+                  <td><span class="gantt-bar apps"></span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Testing, QA &amp; Go-Live</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td><span class="gantt-bar qa"></span></td>
+                  <td><span class="gantt-bar qa"></span></td>
+                  <td><span class="gantt-bar qa"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="gantt-legend">
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);"></span> Theme Setup</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #6366f1, #4f46e5);"></span> Analytics</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #367588, #2a5a6a);"></span> Homepage</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #0891b2, #0e7490);"></span> PDP</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #059669, #047857);"></span> Collection</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #d97706, #b45309);"></span> Cart/Checkout</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #dc2626, #b91c1c);"></span> Performance</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #e35d34, #c94d28);"></span> Content</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #db2777, #be185d);"></span> Apps</div>
+            <div class="gantt-legend-item"><span class="gantt-legend-dot" style="background: linear-gradient(135deg, #1d1d20, #374151);"></span> QA &amp; Launch</div>
+          </div>
+        </div>
+
+        <!-- Milestones -->
+        <div class="section-card" id="milestones">
+          <h2 class="section-title">Key Milestones</h2>
+          <p class="section-subtitle">Major checkpoints during the 12-week engagement</p>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Week</th>
+                  <th>Milestone</th>
+                  <th>What Happens</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Week 2</strong></td>
+                  <td>Theme Installed &amp; Brand Applied</td>
+                  <td>Shapes theme installed, brand colors/typography applied, content migrated</td>
+                </tr>
+                <tr>
+                  <td><strong>Week 4</strong></td>
+                  <td>GA4/GTM Live + Analytics Dashboard</td>
+                  <td>All 13 ecommerce events tracking, UTM audit complete, attribution fixed</td>
+                </tr>
+                <tr>
+                  <td><strong>Week 6</strong></td>
+                  <td>Homepage &amp; PDP Review</td>
+                  <td>New homepage live in staging, PDP enhancements (sticky ATC, reviews, badges) ready</td>
+                </tr>
+                <tr>
+                  <td><strong>Week 9</strong></td>
+                  <td>Full Store Preview</td>
+                  <td>All pages (collection, cart, checkout, content) complete in staging environment</td>
+                </tr>
+                <tr>
+                  <td><strong>Week 10</strong></td>
+                  <td>Performance Audit</td>
+                  <td>PageSpeed target: 50+ mobile. Image optimization, JS/CSS minification complete</td>
+                </tr>
+                <tr>
+                  <td><strong>Week 12</strong></td>
+                  <td>Go-Live</td>
+                  <td>Theme published, final QA, handover documentation, post-launch support begins</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout warning mt-16">
+            <strong>Timeline depends on:</strong> Timely client feedback (within 3 business days), brand assets/content provided by Week 1, and Shopify admin access from Day 1. Delays in these inputs may shift milestones.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TAB 4: SOW & FEATURES
+         ============================================================ -->
+    <section class="tab-content" id="tab-sow">
+
+      <div class="tab-header">
+        <h1>SOW &amp; Features</h1>
+        <p>Every audit finding mapped: theme handles 65%, custom dev targets the remaining 35%</p>
+      </div>
+
+      <div class="tab-body">
+
+        <!-- Summary -->
+        <div class="section-card">
+          <div class="metric-grid">
+            <div class="metric-card">
+              <div class="metric-value success">17</div>
+              <div class="metric-label">Theme Handles</div>
+              <div class="metric-sub">Config only &mdash; no extra dev cost</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value tertiary">9</div>
+              <div class="metric-label">Custom Development</div>
+              <div class="metric-sub">Analytics, CRO, performance, content</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">26</div>
+              <div class="metric-label">Total SOW Items</div>
+              <div class="metric-sub">Every audit finding addressed</div>
+            </div>
+          </div>
+          <div class="callout info">
+            <strong>Cost efficiency:</strong> By migrating to the Shapes theme first, 17 of 26 audit items are resolved through configuration alone &mdash; no custom development cost. Custom dev budget focuses exclusively on items the theme cannot address.
+          </div>
+        </div>
+
+        <!-- Theme Handles -->
+        <div class="sow-section" id="theme-handles">
+          <div class="sow-section-header">
+            <div class="sow-section-icon theme">&#9989;</div>
+            <div>
+              <div class="sow-section-title">Theme Handles</div>
+              <div class="sow-section-count">17 items &mdash; configuration only, no extra development cost</div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">1</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Sticky Add to Cart on PDP</div>
+              <div class="sow-item-desc">CTA stays visible while users scroll through long product pages, reducing friction on mobile</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">2</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Accordion / Tabs on PDP</div>
+              <div class="sow-item-desc">Organized product descriptions, ingredients, and FAQs in collapsible sections for better readability</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">3</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Clickable Hero Banners with CTAs</div>
+              <div class="sow-item-desc">Hero banners link to top collections with clear &ldquo;Shop Now&rdquo; CTAs instead of being dead elements</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">4</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Category Tiles on Homepage</div>
+              <div class="sow-item-desc">Visual category tiles for Cheat Bars, Protein Bars, Milkshakes, Wafers, Energy Bars, Granola</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">5</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">&ldquo;View All&rdquo; Buttons on Product Sections</div>
+              <div class="sow-item-desc">Enables deeper product discovery beyond the homepage featured products</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">6</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Sticky Filter &amp; Sort Bar on PLP</div>
+              <div class="sow-item-desc">Filters remain visible while scrolling collection pages, eliminating the need to scroll back up</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">7</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Scarcity Triggers (Stock Counter)</div>
+              <div class="sow-item-desc">&ldquo;Only X left in stock!&rdquo; urgency messaging near the ATC button on product pages</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">8</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Recently Viewed Items</div>
+              <div class="sow-item-desc">Dynamic section on homepage and PDP to re-engage users with products they&rsquo;ve already browsed</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">9</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Cart Recommendations / Cross-Sell</div>
+              <div class="sow-item-desc">&ldquo;You May Also Like&rdquo; section on cart page to increase AOV with complementary products</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">10</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Trust Badges on Cart Page</div>
+              <div class="sow-item-desc">Secure payment badges, guarantees, and trust signals near the checkout button</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span> <span class="badge cro">CRO</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">11</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Mega Menu Navigation</div>
+              <div class="sow-item-desc">Rich dropdown menu with category images and nested links for faster product discovery</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">12</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Mobile-First Responsive Layout</div>
+              <div class="sow-item-desc">Optimized for mobile-first since 83% of purchases happen on mobile devices</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">13</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Advanced Product Filtering &amp; Sorting</div>
+              <div class="sow-item-desc">Filter by protein content, product type, flavor, price range &mdash; more granular than current basic filters</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">14</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Quick Buy / Quick Add to Cart</div>
+              <div class="sow-item-desc">Add to cart directly from collection page without navigating to PDP &mdash; reduces purchase friction</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">15</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Cart Drawer with Upsells</div>
+              <div class="sow-item-desc">Slide-out cart with upsell suggestions, keeping users on the page while showing cart contents</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">16</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Video on Product Pages + Image Galleries</div>
+              <div class="sow-item-desc">YouTube embeds and enhanced image galleries for product storytelling and nutrition education</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">17</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Color Swatches + Image Zoom</div>
+              <div class="sow-item-desc">Visual variant selection and high-res image zoom for confident purchase decisions</div>
+              <div class="sow-item-badges"><span class="badge inbuilt">Theme Inbuilt</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Dev -->
+        <div class="sow-section" id="custom-dev">
+          <div class="sow-section-header">
+            <div class="sow-section-icon custom">&#9881;</div>
+            <div>
+              <div class="sow-section-title">Custom Development Required</div>
+              <div class="sow-section-count">9 items &mdash; analytics, CRO, content, performance, checkout</div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">1</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">GA4/GTM &mdash; 8 Missing Ecommerce Events</div>
+              <div class="sow-item-desc">Implement add_shipping_info, add_to_wishlist, remove_from_cart, select_item, select_promotion, view_cart, view_item_list, view_promotion via Google Tag Manager</div>
+              <div class="sow-item-badges"><span class="badge analytics">Analytics</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">2</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">UTM Tagging Audit &amp; Attribution Fix</div>
+              <div class="sow-item-desc">Fix 13.7% &ldquo;Unassigned&rdquo; traffic attribution. Audit all UTM parameters across paid and organic campaigns</div>
+              <div class="sow-item-badges"><span class="badge analytics">Analytics</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">3</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">/cart URL Canonicalization Fix</div>
+              <div class="sow-item-desc">/cart and /carts showing as landing pages with 0% conversion &mdash; fix duplicate URLs and redirect logic</div>
+              <div class="sow-item-badges"><span class="badge analytics">Analytics</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">4</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Protein Badges on PLP Tiles</div>
+              <div class="sow-item-desc">Display protein amount (e.g., &ldquo;21g Protein&rdquo;) directly on product cards via Shopify metafields for faster decision-making</div>
+              <div class="sow-item-badges"><span class="badge cro">CRO</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">5</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Reviews App Integration (Judge.me / Loox)</div>
+              <div class="sow-item-desc">Install and configure reviews app &mdash; PDP reviews, homepage testimonial carousel, rating stars on collection cards</div>
+              <div class="sow-item-badges"><span class="badge cro">CRO</span> <span class="badge app">App</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">6</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Notify Me / Back in Stock App</div>
+              <div class="sow-item-desc">&ldquo;Notify Me When Available&rdquo; CTA on sold-out products to capture demand and retain user intent</div>
+              <div class="sow-item-badges"><span class="badge cro">CRO</span> <span class="badge app">App</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">7</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Our Story + Bulk Gifting Content Pages</div>
+              <div class="sow-item-desc">Fix empty content pages &mdash; add brand story, values, and gifting options with clear CTAs</div>
+              <div class="sow-item-badges"><span class="badge content">Content</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">8</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Image Compression + JS/CSS Optimization</div>
+              <div class="sow-item-desc">Target: Mobile PageSpeed 50+ (from current 37). Optimize images, minify scripts, reduce main-thread work</div>
+              <div class="sow-item-badges"><span class="badge performance">Performance</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+
+          <div class="sow-item">
+            <div class="sow-item-num">9</div>
+            <div class="sow-item-body">
+              <div class="sow-item-title">Checkout Trust + Payment Options (BNPL)</div>
+              <div class="sow-item-desc">Add trust seals at payment step, expand payment options with BNPL/wallets to reduce 56.4% payment drop</div>
+              <div class="sow-item-badges"><span class="badge checkout">Checkout</span> <span class="badge custom">Custom Dev</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TAB 5: THEME EVALUATION
+         ============================================================ -->
+    <section class="tab-content" id="tab-themes">
+
+      <div class="tab-header">
+        <h1>Theme Evaluation</h1>
+        <p>4 themes evaluated against Phab&rsquo;s CRO requirements &mdash; one clear winner</p>
+      </div>
+
+      <div class="tab-body">
+
+        <!-- Theme Cards -->
+        <div class="section-card">
+          <h2 class="section-title">Theme Comparison</h2>
+          <p class="section-subtitle">Evaluated against 13 CRO requirements from our audit</p>
+
+          <div class="theme-grid">
+
+            <!-- Shapes - Recommended -->
+            <div class="theme-card recommended">
+              <span class="theme-rec-badge">Recommended</span>
+              <div class="theme-card-name">Shapes</div>
+              <div class="theme-card-price">$380 (one-time)</div>
+              <div class="theme-card-dev">by Switch Themes &bull; Candy Preset</div>
+              <div class="theme-card-rating">
+                <div class="theme-rating-bar"><div class="theme-rating-fill" style="width: 100%;"></div></div>
+                <span class="theme-rating-text">100% positive (78 reviews)</span>
+              </div>
+              <div class="theme-features">
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Built-in comparison table (unique)</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Nutritional/ingredient sections</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Sliding flavor scales</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Food-native design DNA</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Playful dividers &amp; animations</div>
+                <div class="theme-feature-item"><span class="theme-feature-partial">&#9679;</span> Sticky ATC via quick-buy (needs minor customization)</div>
+              </div>
+            </div>
+
+            <!-- Hyper -->
+            <div class="theme-card">
+              <div class="theme-card-name">Hyper</div>
+              <div class="theme-card-price">$400 (one-time)</div>
+              <div class="theme-card-dev">by Flavor Theme</div>
+              <div class="theme-card-rating">
+                <div class="theme-rating-bar"><div class="theme-rating-fill" style="width: 99%;"></div></div>
+                <span class="theme-rating-text">99% positive (335 reviews)</span>
+              </div>
+              <div class="theme-features">
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Broadest CRO feature set</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Product tabs built-in</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Native sticky ATC</div>
+                <div class="theme-feature-item"><span class="theme-feature-cross">&#10007;</span> No comparison table</div>
+                <div class="theme-feature-item"><span class="theme-feature-partial">&#9679;</span> Clinical aesthetic (not playful)</div>
+              </div>
+            </div>
+
+            <!-- Local -->
+            <div class="theme-card">
+              <div class="theme-card-name">Local</div>
+              <div class="theme-card-price">$360 (one-time)</div>
+              <div class="theme-card-dev">by Krown Themes &bull; Lively Preset</div>
+              <div class="theme-card-rating">
+                <div class="theme-rating-bar"><div class="theme-rating-fill" style="width: 98%;"></div></div>
+                <span class="theme-rating-text">98% positive (93 reviews)</span>
+              </div>
+              <div class="theme-features">
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Native sticky cart</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Food &amp; drink focus</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> 30+ built-in sections</div>
+                <div class="theme-feature-item"><span class="theme-feature-cross">&#10007;</span> No comparison table</div>
+                <div class="theme-feature-item"><span class="theme-feature-partial">&#9679;</span> Would need custom comparison section</div>
+              </div>
+            </div>
+
+            <!-- Savor - Rejected -->
+            <div class="theme-card rejected">
+              <span class="theme-rejected-badge">Rejected</span>
+              <div class="theme-card-name">Savor</div>
+              <div class="theme-card-price">Free (Horizon)</div>
+              <div class="theme-card-dev">by Shopify</div>
+              <div class="theme-card-rating">
+                <div class="theme-rating-bar"><div class="theme-rating-fill danger" style="width: 24%;"></div></div>
+                <span class="theme-rating-text">24% positive (50 reviews)</span>
+              </div>
+              <div class="theme-features">
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> Free &mdash; zero cost</div>
+                <div class="theme-feature-item"><span class="theme-feature-check">&#10003;</span> F&amp;B design focus</div>
+                <div class="theme-feature-item"><span class="theme-feature-cross">&#10007;</span> 76% negative reviews</div>
+                <div class="theme-feature-item"><span class="theme-feature-cross">&#10007;</span> Bug reports &amp; instability</div>
+                <div class="theme-feature-item"><span class="theme-feature-cross">&#10007;</span> Too risky for a &#8377;4.5L project</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Feature Comparison Table -->
+        <div class="section-card">
+          <h2 class="section-title">CRO Feature Matrix</h2>
+          <p class="section-subtitle">How each theme covers the 13 critical requirements from our audit</p>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>CRO Requirement</th>
+                  <th>Shapes</th>
+                  <th>Hyper</th>
+                  <th>Local</th>
+                  <th>Savor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Us vs Them Comparison Table</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Built-in</td>
+                  <td style="color: var(--color-danger);">&#10007;</td>
+                  <td style="color: var(--color-danger);">&#10007;</td>
+                  <td style="color: var(--color-danger);">&#10007;</td>
+                </tr>
+                <tr>
+                  <td>Sticky Add to Cart</td>
+                  <td style="color: var(--color-warning);">Quick Buy</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003;</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Nutritional / Ingredient Sections</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Built-in</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-warning);">Custom</td>
+                </tr>
+                <tr>
+                  <td>Mega Menu Navigation</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Product Filtering (Advanced)</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">Advanced</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">Advanced</td>
+                </tr>
+                <tr>
+                  <td>Accordion / Tabs on PDP</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Cross-Sell / Upsell Sections</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Scarcity Triggers</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-warning);">Custom</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Product Videos</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Quick Buy / Quick Add</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Cart Drawer with Upsells</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">Advanced</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">Advanced</td>
+                </tr>
+                <tr>
+                  <td>Mobile-First Layout</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Food &amp; Nutrition Industry Fit</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Candy/Food</td>
+                  <td style="color: var(--color-warning);">Generic</td>
+                  <td style="color: var(--color-success);">&#10003; Food/Drink</td>
+                  <td style="color: var(--color-success);">F&amp;B</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Why Shapes -->
+        <div class="section-card">
+          <h2 class="section-title">Why Shapes?</h2>
+          <p class="section-subtitle">The only theme with a native comparison table &mdash; Phab&rsquo;s critical conversion feature</p>
+
+          <div class="callout success">
+            <strong>Shapes is the only theme with a built-in &ldquo;Us vs Them&rdquo; comparison table</strong> &mdash; the critical feature for converting first-time protein buyers (as seen on the Alpino reference site). Combined with 100% positive reviews, food-industry DNA, and playful design matching Phab&rsquo;s brand personality, it provides the strongest foundation for the revamp.
+          </div>
+
+          <div class="grid-2 mt-24">
+            <div>
+              <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 12px; color: var(--color-success);">What Shapes Gives You (Free)</h3>
+              <ul style="font-size: 13px; line-height: 2;">
+                <li>&#10003; &nbsp;Comparison table (unique to Shapes)</li>
+                <li>&#10003; &nbsp;Nutritional info sections</li>
+                <li>&#10003; &nbsp;Sliding flavor scales</li>
+                <li>&#10003; &nbsp;Playful animations &amp; dividers</li>
+                <li>&#10003; &nbsp;Industry icons for consumables</li>
+                <li>&#10003; &nbsp;All 13 CRO capabilities covered</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 12px; color: var(--color-tertiary);">What Needs Customization</h3>
+              <ul style="font-size: 13px; line-height: 2;">
+                <li>&#9881; &nbsp;Sticky ATC (2&ndash;4 hours custom code)</li>
+                <li>&#9881; &nbsp;Phab brand colors &amp; typography</li>
+                <li>&#9881; &nbsp;&ldquo;Products Sold&rdquo; counter (like Alpino)</li>
+                <li>&#9881; &nbsp;Automation flows (abandoned cart)</li>
+                <li>&#9881; &nbsp;GA4 setup via Google/YouTube app</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TAB 6: MOCKUPS
+         ============================================================ -->
+    <section class="tab-content" id="tab-mockups">
+
+      <div class="tab-header">
+        <h1>Mockups</h1>
+        <p>Visual preview of the proposed homepage and product page</p>
+      </div>
+
+      <div class="tab-body">
+
+        <div class="section-card">
+          <h2 class="section-title">Homepage Mockup</h2>
+          <p class="section-subtitle">Proposed homepage layout in the Shapes theme with Phab&rsquo;s products</p>
+
+          <div class="mockup-placeholder">
+            <div class="mockup-placeholder-icon">&#127968;</div>
+            <h3>Homepage Mockup &mdash; Coming Soon</h3>
+            <p>Once we align on the plan and theme, we&rsquo;ll create a detailed visual mockup showing Phab&rsquo;s actual products, brand colors, and layout in the Shapes theme. This is Step 5 of our journey.</p>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2 class="section-title">Product Page Mockup</h2>
+          <p class="section-subtitle">Proposed PDP layout showing sticky ATC, ingredients, comparison table, and reviews</p>
+
+          <div class="mockup-placeholder">
+            <div class="mockup-placeholder-icon">&#128722;</div>
+            <h3>PDP Mockup &mdash; Coming Soon</h3>
+            <p>The product page mockup will showcase the protein bar PDP with comparison table, nutritional info accordion, reviews section, and sticky ATC &mdash; all the features that address the 83.6% PDP-to-ATC drop.</p>
+          </div>
+        </div>
+
+        <div class="callout info">
+          <strong>Next step:</strong> After aligning on the revamp plan today, we&rsquo;ll create visual mockups in the Shapes theme using Phab&rsquo;s actual products, brand colors, and content. You&rsquo;ll see exactly how your store will look before development begins.
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script>
+    // Password Protection
+    const HASH = 'bf6d6e219829acfc45fedae84c04d9cecd60158c618889454f687dfbf989a0a4'; // SHA-256 of 'phab2026'
+
+    async function sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    // Check if already authenticated
+    if (sessionStorage.getItem('phab_auth') === 'true') {
+      document.getElementById('passwordOverlay').classList.add('hidden');
+    }
+
+    document.getElementById('passwordForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const input = document.getElementById('passwordInput').value;
+      const hash = await sha256(input);
+      if (hash === HASH) {
+        sessionStorage.setItem('phab_auth', 'true');
+        document.getElementById('passwordOverlay').classList.add('hidden');
+      } else {
+        document.getElementById('errorMsg').style.display = 'block';
+        document.getElementById('passwordInput').value = '';
+      }
+    });
+
+    // Tab Navigation
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      document.getElementById('tab-' + tabId).classList.add('active');
+      var activeNav = document.querySelector('[data-tab="' + tabId + '"]');
+      if (activeNav) activeNav.classList.add('active');
+      window.scrollTo(0, 0);
+
+      // Auto-expand the active tab's submenu, collapse others
+      document.querySelectorAll('.nav-item').forEach(function(item) {
+        if (item.dataset.tab === tabId) {
+          item.classList.add('expanded');
+        } else {
+          item.classList.remove('expanded');
+        }
+      });
+
+      // Close mobile sidebar
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebarOverlay').classList.remove('visible');
+    }
+
+    // Toggle submenu expand/collapse
+    function toggleNavSubmenu(navItem) {
+      var wasExpanded = navItem.classList.contains('expanded');
+      document.querySelectorAll('.nav-item').forEach(function(item) {
+        item.classList.remove('expanded');
+      });
+      if (!wasExpanded) {
+        navItem.classList.add('expanded');
+      }
+    }
+
+    // Scroll to a specific section within a tab
+    function scrollToSection(tabId, sectionId) {
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      document.getElementById('tab-' + tabId).classList.add('active');
+      var activeNav = document.querySelector('[data-tab="' + tabId + '"]');
+      if (activeNav) {
+        activeNav.classList.add('active');
+        activeNav.classList.add('expanded');
+      }
+
+      // Close mobile sidebar
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebarOverlay').classList.remove('visible');
+
+      setTimeout(function() {
+        var target = document.getElementById(sectionId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+
+    // Mobile Sidebar Toggle
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('sidebarOverlay').classList.toggle('visible');
+    }
+  </script>
+
+</body>
+</html>
