@@ -1082,15 +1082,198 @@
 
       <div class="tab-header">
         <h1>Theme Evaluation</h1>
-        <p>4 themes evaluated against Phab&rsquo;s CRO requirements &mdash; one clear winner</p>
+        <p>Current theme analysis + 12 themes evaluated against Phab&rsquo;s CRO requirements</p>
       </div>
 
       <div class="tab-body">
 
-        <!-- Theme Cards -->
+        <!-- Current Theme Analysis -->
         <div class="section-card">
-          <h2 class="section-title">Theme Comparison</h2>
-          <p class="section-subtitle">Evaluated against 13 CRO requirements from our audit</p>
+          <h2 class="section-title">Current State &mdash; Running on Taste</h2>
+          <p class="section-subtitle">A free theme with custom Shopflo checkout modifications</p>
+
+          <div class="grid-2 mt-24">
+            <div>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <tbody>
+                    <tr><td style="width:130px;font-weight:600;">Active Theme</td><td><strong>Shopflo &times; Taste 2</strong> (customized)</td></tr>
+                    <tr><td style="font-weight:600;">Base Theme</td><td>Taste by Shopify (Free)</td></tr>
+                    <tr><td style="font-weight:600;">OS 2.0</td><td>Yes</td></tr>
+                    <tr><td style="font-weight:600;">Page Width</td><td>160rem (~2560px &mdash; ultra-wide)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <h3 style="font-size:13px;font-weight:700;margin-bottom:8px;">Key Observations</h3>
+              <ul style="font-size:12px;line-height:1.9;color:var(--color-text-muted);padding-left:16px;">
+                <li>Base theme lacks critical CRO sections out of the box</li>
+                <li>Shopflo modifications are checkout-only &mdash; don&rsquo;t improve product discovery or conversion</li>
+                <li>Ultra-wide 160rem layout hurts readability and mobile experience</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 style="font-size:14px;font-weight:700;margin:28px 0 16px;color:var(--color-danger);">6 Critical CRO Capabilities Missing</h3>
+
+          <div class="grid-3">
+            <div class="kpi-card"><div class="kpi-value" style="font-size:18px;color:var(--color-danger);">&#10007;</div><div class="kpi-label">Sticky Add to Cart</div><div class="kpi-meta">No persistent buy button on scroll &mdash; lost impulse purchases</div></div>
+            <div class="kpi-card"><div class="kpi-value" style="font-size:18px;color:var(--color-danger);">&#10007;</div><div class="kpi-label">Mega Menu Navigation</div><div class="kpi-meta">Single-level nav can&rsquo;t organize 20+ product categories</div></div>
+            <div class="kpi-card"><div class="kpi-value" style="font-size:18px;color:var(--color-danger);">&#10007;</div><div class="kpi-label">Cross-Sell / Upsell</div><div class="kpi-meta">No &ldquo;Frequently Bought Together&rdquo; or cart upsell sections</div></div>
+            <div class="kpi-card"><div class="kpi-value" style="font-size:18px;color:var(--color-danger);">&#10007;</div><div class="kpi-label">Scarcity Triggers</div><div class="kpi-meta">No stock counters, urgency badges, or countdown timers</div></div>
+            <div class="kpi-card"><div class="kpi-value" style="font-size:18px;color:var(--color-danger);">&#10007;</div><div class="kpi-label">Accordion / Tabs on PDP</div><div class="kpi-meta">Product info in single long scroll &mdash; poor mobile UX</div></div>
+            <div class="kpi-card"><div class="kpi-value" style="font-size:18px;color:var(--color-danger);">&#10007;</div><div class="kpi-label">Mobile-First Layout</div><div class="kpi-meta">75% desktop traffic but 83% purchases from mobile &mdash; 14.7&times; CVR gap</div></div>
+          </div>
+
+          <div class="callout danger mt-24">
+            <strong>GET PHAB has outgrown the capabilities of a free theme.</strong> With 83.6% PDP&rarr;ATC drop and 0.72% conversion rate, the current Taste theme lacks the conversion infrastructure needed to grow revenue.
+          </div>
+        </div>
+
+        <!-- Theme Landscape -->
+        <div class="section-card">
+          <h2 class="section-title">Theme Landscape &mdash; All Themes Evaluated</h2>
+          <p class="section-subtitle">9 paid themes + 3 free Horizon themes assessed for Phab&rsquo;s F&amp;B requirements</p>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Theme</th>
+                  <th>Price</th>
+                  <th>Developer</th>
+                  <th>Best For</th>
+                  <th>Demo</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background:rgba(54,117,136,0.06);">
+                  <td><strong>Shapes</strong></td>
+                  <td>$380</td>
+                  <td>Switch Themes</td>
+                  <td>Food &mdash; built-in comparison table (unique)</td>
+                  <td><a href="https://shapes-theme-candy.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="background:var(--color-primary);color:white;font-size:9px;padding:3px 8px;border-radius:10px;font-weight:700;white-space:nowrap;">RECOMMENDED</span></td>
+                </tr>
+                <tr style="background:rgba(54,117,136,0.06);">
+                  <td><strong>Hyper</strong></td>
+                  <td>$400</td>
+                  <td>Flavor Theme</td>
+                  <td>Max CRO control + native nutrition features</td>
+                  <td><a href="https://hyper-theme-chill.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="background:var(--color-success);color:white;font-size:9px;padding:3px 8px;border-radius:10px;font-weight:700;white-space:nowrap;">SHORTLISTED</span></td>
+                </tr>
+                <tr>
+                  <td>Impulse</td>
+                  <td>$380</td>
+                  <td>Archetype Themes</td>
+                  <td>Visual storytelling, lifestyle brands</td>
+                  <td><a href="https://impulse-theme-modern.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Impact</td>
+                  <td>$400</td>
+                  <td>Maestrooo</td>
+                  <td>Bold visuals, hero product focus</td>
+                  <td><a href="https://impact-theme-sound.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Prestige</td>
+                  <td>$380</td>
+                  <td>Maestrooo</td>
+                  <td>Premium / luxury positioning</td>
+                  <td><a href="https://prestige-theme-allure.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Broadcast</td>
+                  <td>$360</td>
+                  <td>JEFLECT</td>
+                  <td>Editorial style, content-heavy</td>
+                  <td><a href="https://broadcast-theme-clean.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Warehouse</td>
+                  <td>$360</td>
+                  <td>Maestrooo</td>
+                  <td>Large catalog, advanced filters</td>
+                  <td><a href="https://warehouse-theme-metal.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Motion</td>
+                  <td>$350</td>
+                  <td>Archetype Themes</td>
+                  <td>High-res visuals, beauty / jewelry</td>
+                  <td><a href="https://motion-theme-classic.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Stretch</td>
+                  <td>$350</td>
+                  <td>Flavor Theme</td>
+                  <td>Modern minimal, wellness brands</td>
+                  <td><a href="https://stretch-theme.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr style="background:rgba(54,117,136,0.06);">
+                  <td><strong>Local</strong></td>
+                  <td>$360</td>
+                  <td>Krown Themes</td>
+                  <td>Food &amp; drink native, 30+ sections</td>
+                  <td><a href="https://local-theme-lively.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="background:var(--color-success);color:white;font-size:9px;padding:3px 8px;border-radius:10px;font-weight:700;white-space:nowrap;">SHORTLISTED</span></td>
+                </tr>
+                <tr>
+                  <td>Empire</td>
+                  <td>$340</td>
+                  <td>Pixel Union</td>
+                  <td>Large catalog, multi-category</td>
+                  <td><a href="https://empire-theme-supply.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr><td colspan="6" style="text-align:center;font-weight:700;font-size:11px;letter-spacing:0.5px;color:var(--color-primary);text-transform:uppercase;padding:16px 0 8px;">Free Horizon Themes (by Shopify)</td></tr>
+                <tr style="background:rgba(54,117,136,0.06);">
+                  <td><strong>Savor</strong></td>
+                  <td>Free</td>
+                  <td>Shopify</td>
+                  <td>F&amp;B-specific, Horizon next-gen architecture</td>
+                  <td><a href="https://savor-theme-horizon.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="background:var(--color-warning);color:white;font-size:9px;padding:3px 8px;border-radius:10px;font-weight:700;white-space:nowrap;">FREE OPTION</span></td>
+                </tr>
+                <tr>
+                  <td>Pitch</td>
+                  <td>Free</td>
+                  <td>Shopify</td>
+                  <td>Subscriptions, DTC brands</td>
+                  <td><a href="https://pitch-theme-horizon.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+                <tr>
+                  <td>Ritual</td>
+                  <td>Free</td>
+                  <td>Shopify</td>
+                  <td>Clean minimal, wellness</td>
+                  <td><a href="https://ritual-theme-horizon.myshopify.com/" target="_blank" rel="noopener" style="color:var(--color-primary);font-size:11px;">View Demo &rarr;</a></td>
+                  <td><span style="font-size:10px;color:var(--color-text-muted);">Evaluated</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source-label mt-12">Source: Shopify Theme Store (themes.shopify.com) &bull; Prices as of Feb 2026</p>
+        </div>
+
+        <!-- Shortlisted Theme Cards -->
+        <div class="section-card">
+          <h2 class="section-title">Shortlisted Themes &mdash; Deep Dive</h2>
+          <p class="section-subtitle">4 themes evaluated in detail against CRO requirements from our audit</p>
 
           <div class="theme-grid">
 
@@ -1188,46 +1371,35 @@
           </div>
         </div>
 
-        <!-- Feature Comparison Table -->
+        <!-- Side-by-Side CRO Feature Analysis -->
         <div class="section-card">
-          <h2 class="section-title">CRO Feature Matrix</h2>
-          <p class="section-subtitle">How each theme covers the 13 critical requirements from our audit</p>
+          <h2 class="section-title">Side-by-Side CRO Feature Analysis</h2>
+          <p class="section-subtitle">Current theme vs shortlisted options across 16 CRO capabilities</p>
 
           <div class="data-table-wrap">
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>CRO Requirement</th>
-                  <th>Shapes</th>
-                  <th>Hyper</th>
-                  <th>Local</th>
-                  <th>Savor</th>
+                  <th>CRO Capability</th>
+                  <th style="color: var(--color-danger);">Current (Taste)</th>
+                  <th>Shapes ($380)</th>
+                  <th>Hyper ($400)</th>
+                  <th>Local ($360)</th>
+                  <th>Savor (Free)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Us vs Them Comparison Table</td>
-                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Built-in</td>
-                  <td style="color: var(--color-danger);">&#10007;</td>
-                  <td style="color: var(--color-danger);">&#10007;</td>
-                  <td style="color: var(--color-danger);">&#10007;</td>
-                </tr>
-                <tr>
                   <td>Sticky Add to Cart</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-warning);">Quick Buy</td>
                   <td style="color: var(--color-success); font-weight: 700;">&#10003;</td>
                   <td style="color: var(--color-success); font-weight: 700;">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                 </tr>
                 <tr>
-                  <td>Nutritional / Ingredient Sections</td>
-                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Built-in</td>
-                  <td style="color: var(--color-success);">&#10003;</td>
-                  <td style="color: var(--color-success);">&#10003;</td>
-                  <td style="color: var(--color-warning);">Custom</td>
-                </tr>
-                <tr>
                   <td>Mega Menu Navigation</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1235,6 +1407,7 @@
                 </tr>
                 <tr>
                   <td>Product Filtering (Advanced)</td>
+                  <td style="color: var(--color-warning);">Basic</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">Advanced</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1242,6 +1415,7 @@
                 </tr>
                 <tr>
                   <td>Accordion / Tabs on PDP</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1249,6 +1423,7 @@
                 </tr>
                 <tr>
                   <td>Cross-Sell / Upsell Sections</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1256,13 +1431,31 @@
                 </tr>
                 <tr>
                   <td>Scarcity Triggers</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-warning);">Custom</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                 </tr>
                 <tr>
+                  <td>Ingredient / Nutritional Info</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Built-in</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-warning);">Custom</td>
+                </tr>
+                <tr>
+                  <td>Us vs Them Comparison Table</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
+                  <td style="color: var(--color-success); font-weight: 700;">&#10003; Built-in</td>
+                  <td style="color: var(--color-danger);">&#10007;</td>
+                  <td style="color: var(--color-danger);">&#10007;</td>
+                  <td style="color: var(--color-danger);">&#10007;</td>
+                </tr>
+                <tr>
                   <td>Product Videos</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1270,6 +1463,7 @@
                 </tr>
                 <tr>
                   <td>Quick Buy / Quick Add</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1277,6 +1471,7 @@
                 </tr>
                 <tr>
                   <td>Cart Drawer with Upsells</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">Advanced</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1284,6 +1479,23 @@
                 </tr>
                 <tr>
                   <td>Mobile-First Layout</td>
+                  <td style="color: var(--color-danger); font-weight: 700;">&#10007;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>AI-Powered Customization</td>
+                  <td style="color: var(--color-text-muted);">N/A</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                  <td style="color: var(--color-success);">&#10003;</td>
+                </tr>
+                <tr>
+                  <td>Block-Based Design (OS 2.0)</td>
+                  <td style="color: var(--color-warning);">Limited</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
                   <td style="color: var(--color-success);">&#10003;</td>
@@ -1291,13 +1503,26 @@
                 </tr>
                 <tr>
                   <td>Food &amp; Nutrition Industry Fit</td>
+                  <td style="color: var(--color-text-muted);">Generic</td>
                   <td style="color: var(--color-success); font-weight: 700;">&#10003; Candy/Food</td>
                   <td style="color: var(--color-warning);">Generic</td>
                   <td style="color: var(--color-success);">&#10003; Food/Drink</td>
                   <td style="color: var(--color-success);">F&amp;B</td>
                 </tr>
+                <tr>
+                  <td>One-Time Cost</td>
+                  <td style="color: var(--color-success); font-weight: 700;">Free</td>
+                  <td>$380</td>
+                  <td>$400</td>
+                  <td>$360</td>
+                  <td style="color: var(--color-success); font-weight: 700;">Free</td>
+                </tr>
               </tbody>
             </table>
+          </div>
+
+          <div class="callout mt-24" style="background: rgba(54,117,136,0.04); border-color: var(--color-primary);">
+            <strong>Current theme scores 0/14 on CRO capabilities</strong> (excluding cost and industry fit). All 4 shortlisted themes deliver 12&ndash;14 out of 14, with Shapes uniquely offering a built-in comparison table &mdash; Phab&rsquo;s critical conversion feature for first-time protein buyers.
           </div>
         </div>
 
