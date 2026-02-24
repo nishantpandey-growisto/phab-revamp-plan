@@ -65,7 +65,15 @@
         </div>
       </div>
 
-      <!-- 2. Impact & ROI -->
+      <!-- 2. CRO Audit -->
+      <div class="nav-item" data-tab="audit">
+        <div class="nav-item-header" onclick="switchTab('audit')">
+          <span class="nav-icon">&#128270;</span>
+          <span class="nav-label">CRO Audit</span>
+        </div>
+      </div>
+
+      <!-- 3. Impact & ROI -->
       <div class="nav-item" data-tab="impact">
         <div class="nav-item-header" onclick="switchTab('impact')">
           <span class="nav-icon">&#128200;</span>
@@ -119,11 +127,11 @@
         </div>
       </div>
 
-      <!-- 6. Mockups -->
+      <!-- 6. Wireframes -->
       <div class="nav-item" data-tab="mockups">
         <div class="nav-item-header" onclick="switchTab('mockups')">
           <span class="nav-icon">&#128421;</span>
-          <span class="nav-label">Mockups</span>
+          <span class="nav-label">Wireframes</span>
         </div>
       </div>
 
@@ -282,80 +290,40 @@
     </section>
 
     <!-- ============================================================
-         TAB 2: IMPACT & ROI
+         TAB 2: CRO AUDIT (Google Slides Embed)
+         ============================================================ -->
+    <section class="tab-content" id="tab-audit">
+
+      <div class="tab-header">
+        <h1>CRO Audit</h1>
+        <p>56-slide deep-dive into Phab&rsquo;s current store performance, funnel analysis, and opportunities</p>
+      </div>
+
+      <div class="tab-body">
+        <div class="audit-iframe-wrap">
+          <iframe src="https://docs.google.com/presentation/d/1_UfCKZuGWVfKD6nf-aOX4hJbUSDN7ghrriA1cfhANqk/embed?start=false&loop=false&delayms=60000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <p class="source-label mt-12" style="text-align: center;">Use arrow keys or on-screen controls to navigate slides &bull; Click fullscreen icon for best viewing experience</p>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         TAB 3: IMPACT & ROI
          ============================================================ -->
     <section class="tab-content" id="tab-impact">
 
       <div class="tab-header">
         <h1>Impact &amp; ROI</h1>
-        <p>What a conversion improvement means for Phab&rsquo;s revenue</p>
+        <p>What a 10% conversion improvement means for Phab&rsquo;s revenue</p>
       </div>
 
       <div class="tab-body">
 
-        <!-- Current State -->
+        <!-- Conversion Projections Table -->
         <div class="section-card">
-          <h2 class="section-title">Current State</h2>
-          <p class="section-subtitle">Source: GA4, January 2026</p>
-          <div class="metric-grid">
-            <div class="metric-card">
-              <div class="metric-value">&#8377;9.09L</div>
-              <div class="metric-label">Monthly Revenue</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-value">0.72%</div>
-              <div class="metric-label">Conversion Rate</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-value">89K</div>
-              <div class="metric-label">Monthly Sessions</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-value">~&#8377;1,400</div>
-              <div class="metric-label">Average Order Value</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Conversion Scenarios -->
-        <div class="section-card">
-          <h2 class="section-title">Conversion Improvement Scenarios</h2>
-          <p class="section-subtitle">What different levels of improvement mean for your revenue</p>
-
-          <div class="scenario-grid">
-            <div class="scenario-card">
-              <div class="scenario-label">Current</div>
-              <div class="scenario-cvr">0.72%</div>
-              <div class="scenario-revenue">&#8377;9.09L/mo</div>
-              <div class="scenario-gain none">Baseline</div>
-            </div>
-            <div class="scenario-card">
-              <div class="scenario-label">+8% Lift (Q1)</div>
-              <div class="scenario-cvr">0.78%</div>
-              <div class="scenario-revenue">&#8377;9.84L/mo</div>
-              <div class="scenario-gain">+&#8377;0.75L/mo</div>
-            </div>
-            <div class="scenario-card highlight">
-              <div class="scenario-label">+25% Lift (Q2)</div>
-              <div class="scenario-cvr">0.90%</div>
-              <div class="scenario-revenue">&#8377;11.34L/mo</div>
-              <div class="scenario-gain">+&#8377;2.25L/mo</div>
-            </div>
-            <div class="scenario-card">
-              <div class="scenario-label">+50% Lift (Q4)</div>
-              <div class="scenario-cvr">1.08%</div>
-              <div class="scenario-revenue">&#8377;13.61L/mo</div>
-              <div class="scenario-gain">+&#8377;4.52L/mo</div>
-            </div>
-          </div>
-
-          <p class="source-label mt-8">Source: GA4 Jan 2026 baseline &times; projected CR improvement. Revenue is a derived metric &mdash; depends on traffic &amp; AOV.</p>
-        </div>
-
-        <!-- Quarter-on-Quarter Projection -->
-        <div class="section-card">
-          <h2 class="section-title">Quarter-on-Quarter Revenue Projection</h2>
-          <p class="section-subtitle">Projected growth from 0.72% to 1.08% conversion rate over 4 quarters</p>
+          <h2 class="section-title">Conversion Projections</h2>
+          <p class="section-subtitle">10% improvement from current baseline, sustained over 12 months</p>
 
           <div class="data-table-wrap">
             <table class="data-table">
@@ -363,86 +331,145 @@
                 <tr>
                   <th>KPI</th>
                   <th>Baseline (Jan &rsquo;26)</th>
-                  <th>Q1 End (M3)</th>
-                  <th>Q2 End (M6)</th>
-                  <th>Q3 End (M9)</th>
-                  <th>Q4 End (M12)</th>
+                  <th>Month 3</th>
+                  <th>Month 6</th>
+                  <th>Month 12</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Conversion Rate</strong></td>
                   <td>0.72%</td>
-                  <td>0.78%</td>
-                  <td>0.90%</td>
-                  <td>1.00%</td>
-                  <td>1.08%</td>
+                  <td style="color: var(--color-success); font-weight: 600;">0.79%</td>
+                  <td style="color: var(--color-success); font-weight: 600;">0.79%</td>
+                  <td style="color: var(--color-success); font-weight: 600;">0.79%</td>
                 </tr>
                 <tr>
-                  <td>QoQ CR Lift</td>
+                  <td>CR Lift</td>
                   <td>&mdash;</td>
-                  <td>+8%</td>
-                  <td>+15%</td>
-                  <td>+11%</td>
-                  <td>+8%</td>
-                </tr>
-                <tr>
-                  <td>Cumulative CR Lift</td>
-                  <td>&mdash;</td>
-                  <td>+8%</td>
-                  <td>+25%</td>
-                  <td>+39%</td>
-                  <td>+50%</td>
+                  <td>+10%</td>
+                  <td>+10%</td>
+                  <td>+10%</td>
                 </tr>
                 <tr>
                   <td>Monthly Purchases</td>
                   <td>649</td>
-                  <td>703</td>
-                  <td>810</td>
-                  <td>900</td>
-                  <td>972</td>
+                  <td>714</td>
+                  <td>714</td>
+                  <td>714</td>
                 </tr>
                 <tr>
                   <td><strong>Monthly Revenue</strong></td>
                   <td>&#8377;9.09L</td>
-                  <td>&#8377;9.84L</td>
-                  <td>&#8377;11.34L</td>
-                  <td>&#8377;12.60L</td>
-                  <td>&#8377;13.61L</td>
+                  <td>&#8377;10.0L</td>
+                  <td>&#8377;10.0L</td>
+                  <td>&#8377;10.0L</td>
                 </tr>
                 <tr style="background: rgba(54,117,136,0.05);">
                   <td><strong>Monthly Revenue Gain</strong></td>
                   <td>&mdash;</td>
-                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;0.75L</td>
-                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;2.25L</td>
-                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;3.51L</td>
-                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;4.52L</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;0.91L</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;0.91L</td>
+                  <td style="color: var(--color-success); font-weight: 600;">+&#8377;0.91L</td>
+                </tr>
+                <tr style="background: rgba(54,117,136,0.08);">
+                  <td><strong>Cumulative Revenue Gain</strong></td>
+                  <td>&mdash;</td>
+                  <td style="color: var(--color-success); font-weight: 700;">+&#8377;2.73L</td>
+                  <td style="color: var(--color-success); font-weight: 700;">+&#8377;5.46L</td>
+                  <td style="color: var(--color-success); font-weight: 700;">+&#8377;10.9L</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <p class="source-label mt-12">Source: GA4 Jan 2026 baseline. Conversion Rate will be owned by Growisto; revenue is a derived metric dependent on traffic &amp; AOV.</p>
+          <p class="source-label mt-8">Source: GA4 Jan 2026 baseline. Sessions = 89K, AOV = &#8377;1,400. Revenue is a derived metric dependent on traffic &amp; AOV.</p>
         </div>
 
-        <!-- Payback -->
-        <div class="section-card">
-          <h2 class="section-title">Investment &amp; Payback</h2>
-          <p class="section-subtitle">How quickly the revamp pays for itself</p>
+        <!-- Payback Callout -->
+        <div class="callout success" style="text-align: center; padding: 32px;">
+          <div style="font-size: 22px; font-weight: 800; margin-bottom: 8px;">A 10% improvement pays for the entire project in ~4.5 months</div>
+          <div style="font-size: 14px; color: var(--color-text-muted);">
+            Payback: ~135 days &bull; 12-Month Return: <strong style="color: var(--color-primary);">&#8377;10.9L on a &#8377;4L investment (2.7x)</strong>
+          </div>
+        </div>
 
-          <div class="grid-2">
-            <div class="payback-card">
-              <div class="payback-number">&#8377;4L</div>
-              <div class="payback-unit">One-Time Investment</div>
-              <div class="payback-label">Growisto Fee (inclusive of migration + dev + customization)</div>
-              <div class="payback-detail">GST as applicable &bull; 6&ndash;10 week timeline &bull; Payment: 40/30/30</div>
+        <!-- Why 10% is Conservative -->
+        <div class="section-card">
+          <h2 class="section-title">Why 10% is Conservative</h2>
+          <p class="section-subtitle">Based on specific findings from our CRO audit</p>
+          <div class="callout info">
+            <ul style="margin: 0; padding-left: 20px; line-height: 2;">
+              <li><strong>77.2% of sessions never reach a product page</strong> &mdash; Homepage has non-clickable banners, weak merchandising. Fixing navigation and category tiles alone can significantly lift PDP views.</li>
+              <li><strong>83.6% PDP&rarr;ATC drop-off</strong> &mdash; No reviews, no trust badges, no sticky ATC, poor CTA visibility. Industry benchmarks show 5&ndash;8% ATC rates vs Phab&rsquo;s ~3.2%.</li>
+              <li><strong>PageSpeed 37/100 mobile</strong> &mdash; Every 1s delay = ~7% conversion loss. Moving to Shapes theme with optimization targets 40+ mobile.</li>
+              <li><strong>8 of 13 GA4 events missing</strong> &mdash; Can&rsquo;t optimize what you can&rsquo;t measure. Full tracking setup alone improves targeting ROI.</li>
+              <li><strong>Email &amp; push near 0%</strong> &mdash; 1% email, 0.5% push. Setting up Klaviyo with 3 core flows (welcome, abandoned cart, post-purchase) adds a new revenue channel.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 12-Week Implementation Timeline -->
+        <div class="section-card">
+          <h2 class="section-title">12-Week Implementation &amp; Impact Timeline</h2>
+          <p class="section-subtitle">What goes live and when</p>
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Timeline</th>
+                  <th>What Goes Live</th>
+                  <th>Key Features</th>
+                  <th>Expected Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Weeks 1&ndash;3</strong></td>
+                  <td>Quick Wins</td>
+                  <td>GA4/GTM events setup, PageSpeed optimization, trust badges, basic UI fixes</td>
+                  <td>Tracking foundation + immediate speed gains</td>
+                </tr>
+                <tr>
+                  <td><strong>Weeks 4&ndash;8</strong></td>
+                  <td>Core Theme &amp; Features</td>
+                  <td>Shapes theme migration, homepage redesign, 3 PDP templates, cart optimization, Klaviyo setup</td>
+                  <td>Primary conversion lift from new UX + email flows</td>
+                </tr>
+                <tr>
+                  <td><strong>Weeks 9&ndash;12</strong></td>
+                  <td>Polish &amp; Go-Live</td>
+                  <td>Mobile fine-tuning, collection page filters, cross-sells, QA testing, go-live</td>
+                  <td>Full 10%+ lift realized post go-live</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Reinvestment Multiplier -->
+        <div class="section-card">
+          <h2 class="section-title">The Reinvestment Multiplier</h2>
+          <p class="section-subtitle">How conversion gains compound into traffic growth</p>
+          <div class="grid-3" style="margin-top: 16px;">
+            <div class="metric-card" style="text-align: center;">
+              <div class="metric-value" style="font-size: 20px;">+&#8377;0.91L/mo</div>
+              <div class="metric-label">Additional Revenue</div>
+              <div class="metric-sub">From 10% conversion lift on existing 89K sessions</div>
             </div>
-            <div class="payback-card" style="background: linear-gradient(135deg, #e35d34 0%, #c94d28 100%);">
-              <div class="payback-number">~2</div>
-              <div class="payback-unit">Months to Payback</div>
-              <div class="payback-label">At the moderate scenario (+&#8377;2.25L/mo gain)</div>
-              <div class="payback-detail">Every month of delay = &#8377;2.25L+ in unrealized revenue from your existing traffic</div>
+            <div class="metric-card" style="text-align: center; background: rgba(54,117,136,0.05);">
+              <div class="metric-value" style="font-size: 20px;">&#8377;0.3&ndash;0.5L</div>
+              <div class="metric-label">Reinvest in Ads</div>
+              <div class="metric-sub">Redirect a portion of gains into paid acquisition</div>
             </div>
+            <div class="metric-card" style="text-align: center; background: rgba(227,93,52,0.05);">
+              <div class="metric-value" style="font-size: 20px;">3&ndash;5x ROAS</div>
+              <div class="metric-label">Traffic Growth</div>
+              <div class="metric-sub">Higher CVR = lower CAC = more profitable ad spend</div>
+            </div>
+          </div>
+          <div class="callout info" style="margin-top: 16px;">
+            <strong>The flywheel effect:</strong> A higher-converting store means every rupee spent on ads works harder. At 0.79% CVR (vs current 0.72%), your cost per acquisition drops, enabling you to scale paid channels profitably and compound the revenue gains beyond the organic 10% lift.
           </div>
         </div>
 
@@ -455,7 +482,7 @@
               <thead>
                 <tr>
                   <th>Funnel Leak</th>
-                  <th>Current</th>
+                  <th>Severity</th>
                   <th>Problem</th>
                   <th>Our Fix</th>
                 </tr>
@@ -782,7 +809,7 @@
                 </tr>
                 <tr>
                   <td><strong>Timeline</strong></td>
-                  <td>6&ndash;10 weeks from project initiation</td>
+                  <td>12 weeks from project initiation</td>
                 </tr>
               </tbody>
             </table>
@@ -1073,6 +1100,10 @@
               <div class="theme-card-name">Shapes</div>
               <div class="theme-card-price">$380 (one-time)</div>
               <div class="theme-card-dev">by Switch Themes &bull; Candy Preset</div>
+              <div class="theme-card-links">
+                <a href="https://themes.shopify.com/themes/shapes/styles/candy" target="_blank" rel="noopener">Theme Store &rarr;</a>
+                <a href="https://shapes-theme-candy.myshopify.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              </div>
               <div class="theme-card-rating">
                 <div class="theme-rating-bar"><div class="theme-rating-fill" style="width: 100%;"></div></div>
                 <span class="theme-rating-text">100% positive (78 reviews)</span>
@@ -1092,6 +1123,10 @@
               <div class="theme-card-name">Hyper</div>
               <div class="theme-card-price">$400 (one-time)</div>
               <div class="theme-card-dev">by Flavor Theme</div>
+              <div class="theme-card-links">
+                <a href="https://themes.shopify.com/themes/hyper/styles/chill" target="_blank" rel="noopener">Theme Store &rarr;</a>
+                <a href="https://hyper-theme-chill.myshopify.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              </div>
               <div class="theme-card-rating">
                 <div class="theme-rating-bar"><div class="theme-rating-fill" style="width: 99%;"></div></div>
                 <span class="theme-rating-text">99% positive (335 reviews)</span>
@@ -1110,6 +1145,10 @@
               <div class="theme-card-name">Local</div>
               <div class="theme-card-price">$360 (one-time)</div>
               <div class="theme-card-dev">by Krown Themes &bull; Lively Preset</div>
+              <div class="theme-card-links">
+                <a href="https://themes.shopify.com/themes/local/styles/lively" target="_blank" rel="noopener">Theme Store &rarr;</a>
+                <a href="https://local-theme-lively.myshopify.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              </div>
               <div class="theme-card-rating">
                 <div class="theme-rating-bar"><div class="theme-rating-fill" style="width: 98%;"></div></div>
                 <span class="theme-rating-text">98% positive (93 reviews)</span>
@@ -1129,6 +1168,10 @@
               <div class="theme-card-name">Savor</div>
               <div class="theme-card-price">Free (Horizon)</div>
               <div class="theme-card-dev">by Shopify</div>
+              <div class="theme-card-links">
+                <a href="https://themes.shopify.com/themes/savor/styles/horizon" target="_blank" rel="noopener">Theme Store &rarr;</a>
+                <a href="https://savor-theme-horizon.myshopify.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              </div>
               <div class="theme-card-rating">
                 <div class="theme-rating-bar"><div class="theme-rating-fill danger" style="width: 24%;"></div></div>
                 <span class="theme-rating-text">24% positive (50 reviews)</span>
@@ -1301,8 +1344,8 @@
     <section class="tab-content" id="tab-mockups">
 
       <div class="tab-header">
-        <h1>Mockups</h1>
-        <p>Wireframe layouts showing proposed homepage and product page in the Shapes theme</p>
+        <h1>Wireframes</h1>
+        <p>Section layouts showing proposed homepage and product page in the Shapes theme</p>
       </div>
 
       <div class="tab-body">
@@ -1532,52 +1575,125 @@
           </div>
         </div>
 
-        <!-- Timeline -->
+        <!-- What's Included vs Not Included -->
         <div class="section-card">
-          <h2 class="section-title">Timeline</h2>
-          <p class="section-subtitle">6&ndash;10 weeks from project initiation to go-live</p>
+          <h2 class="section-title">What&rsquo;s Included vs. Not Included</h2>
+          <p class="section-subtitle">Clear scope boundaries for this engagement</p>
 
-          <div class="grid-2">
-            <div class="payback-card" style="margin: 0;">
-              <div class="payback-number">6&ndash;10</div>
-              <div class="payback-unit">Weeks</div>
-              <div class="payback-label">Project Duration</div>
+          <div class="included-vs-not">
+            <div class="included-col in">
+              <div class="included-col-title">
+                <span style="color: var(--color-success);">&#9989;</span> Included in &#8377;4L
+              </div>
+              <div class="included-col-phase">Phase 1: Quick Wins (Weeks 1&ndash;3)</div>
+              <ul>
+                <li>GA4/GTM event setup (fixing 8 missing events)</li>
+                <li>PageSpeed optimization (mobile 37 &rarr; 40+)</li>
+                <li>Trust badges &amp; USP bar implementation</li>
+                <li>Basic homepage UI fixes</li>
+              </ul>
+              <div class="included-col-phase">Phase 2: Core Features (Weeks 4&ndash;12)</div>
+              <ul>
+                <li>Shapes theme license ($380) + full migration</li>
+                <li>Homepage redesign (hero, categories, best-sellers)</li>
+                <li>3 unique PDP designs (Bars, Milkshakes, Wafers)</li>
+                <li>Collection page optimization (filters, sort)</li>
+                <li>Cart page improvements (cross-sells, trust)</li>
+                <li>Klaviyo setup + 3 core email flows</li>
+                <li>All app installations &amp; configuration</li>
+                <li>Payment gateway integration (Razorpay)</li>
+                <li>Mobile-responsive across all breakpoints</li>
+                <li>15 days post-launch support</li>
+              </ul>
             </div>
-            <div class="payback-card" style="background: linear-gradient(135deg, #e35d34 0%, #c94d28 100%); margin: 0;">
-              <div class="payback-number">~2</div>
-              <div class="payback-unit">Month Payback</div>
-              <div class="payback-label">At +25% conversion lift (&#8377;2.25L/mo gain)</div>
+            <div class="included-col out">
+              <div class="included-col-title">
+                <span style="color: var(--color-accent);">&#10148;</span> Phase 3 (Not in &#8377;4L &rarr; post-launch)
+              </div>
+              <ul>
+                <li>Subscription / auto-replenish model</li>
+                <li>Referral program (ReferralCandy / Smile.io)</li>
+                <li>Loyalty / rewards program setup</li>
+                <li>Advanced AI-based personalization</li>
+                <li>Instagram / UGC social feed integration</li>
+                <li>Virtual try-on / AR experience</li>
+                <li>Multi-language support</li>
+                <li>Full blog redesign &amp; content strategy</li>
+                <li>Advanced A/B testing setup</li>
+                <li>Custom recipe integration / nutrition calculator</li>
+              </ul>
+              <div class="callout info" style="margin-top: 16px; font-size: 12px;">
+                Phase 3 features can be scoped as a follow-on project once Phase 1&ndash;2 results are measured. Estimated cost: &#8377;1&ndash;1.5L additional.
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Next Steps -->
+        <!-- Timeline -->
         <div class="section-card">
-          <h2 class="section-title">Next Steps</h2>
-          <p class="section-subtitle">What happens after today&rsquo;s call</p>
+          <h2 class="section-title">Timeline</h2>
+          <p class="section-subtitle">12 weeks from project initiation to go-live</p>
 
-          <div class="next-steps-flow">
-            <div class="next-step-item active">
-              <div class="next-step-num">1</div>
-              <div class="next-step-body">
-                <div class="next-step-title">Theme Finalization</div>
-                <div class="next-step-desc">Confirm Shapes as the theme, finalize any scope adjustments based on today&rsquo;s discussion</div>
-              </div>
+          <div class="grid-2">
+            <div class="payback-card" style="margin: 0;">
+              <div class="payback-number">12</div>
+              <div class="payback-unit">Weeks</div>
+              <div class="payback-label">Project Duration</div>
             </div>
-            <div class="next-step-connector"></div>
-            <div class="next-step-item">
-              <div class="next-step-num">2</div>
-              <div class="next-step-body">
-                <div class="next-step-title">Agreement &amp; Initiation</div>
-                <div class="next-step-desc">Sign SOW, first milestone payment (&#8377;1,60,000), and project kickoff within 3 business days</div>
-              </div>
+            <div class="payback-card" style="background: linear-gradient(135deg, #e35d34 0%, #c94d28 100%); margin: 0;">
+              <div class="payback-number">~4.5</div>
+              <div class="payback-unit">Month Payback</div>
+              <div class="payback-label">At +10% conversion lift (&#8377;0.91L/mo gain)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Remaining Journey -->
+        <div class="section-card">
+          <h2 class="section-title">Remaining Journey</h2>
+          <p class="section-subtitle">Steps 1&ndash;4 complete. One step remaining.</p>
+
+          <div class="journey-flow">
+            <div class="journey-step done">
+              <div class="journey-step-circle">&#10003;</div>
+              <div class="journey-step-title">Discovery</div>
+              <div class="journey-step-desc">Call, questionnaire, GA4 + Shopify access granted</div>
+              <div class="journey-step-badge">Done</div>
+            </div>
+            <div class="journey-connector"></div>
+            <div class="journey-step done">
+              <div class="journey-step-circle">&#10003;</div>
+              <div class="journey-step-title">CRO Audit &amp; Analysis</div>
+              <div class="journey-step-desc">56-slide audit, PageSpeed, GA4 funnel analysis</div>
+              <div class="journey-step-badge">Done</div>
+            </div>
+            <div class="journey-connector"></div>
+            <div class="journey-step done">
+              <div class="journey-step-circle">&#10003;</div>
+              <div class="journey-step-title">Feature &amp; Theme Planning</div>
+              <div class="journey-step-desc">Theme evaluation, feature matrix, wireframes</div>
+              <div class="journey-step-badge">Done</div>
+            </div>
+            <div class="journey-connector"></div>
+            <div class="journey-step done">
+              <div class="journey-step-circle">&#10003;</div>
+              <div class="journey-step-title">Plan Walkthrough</div>
+              <div class="journey-step-desc">Reviewed findings, aligned on scope &amp; priorities</div>
+              <div class="journey-step-badge">Done</div>
+            </div>
+            <div class="journey-connector"></div>
+            <div class="journey-step next">
+              <div class="journey-step-circle">5</div>
+              <div class="journey-step-title">Agreement &amp; Implementation</div>
+              <div class="journey-step-desc">Scope lock, Figma mockups, development kickoff, 12-week delivery</div>
+              <div class="journey-step-badge">Next</div>
             </div>
           </div>
         </div>
 
         <!-- Urgency -->
         <div class="callout warning">
-          <strong>Every month without these fixes = &#8377;2.25L+ in unrealized revenue</strong> from your existing 89K monthly sessions. The traffic is already there &mdash; we just need to convert it better.
+          <strong>Every month without these fixes = &#8377;0.91L+ in unrealized revenue</strong> from your existing 89K monthly sessions. The traffic is already there &mdash; we just need to convert it better.
         </div>
 
         <!-- Contact -->
