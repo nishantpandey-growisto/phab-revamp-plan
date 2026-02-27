@@ -6,6 +6,7 @@
   <title>Phab — Store Revamp Plan | Growisto</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mockup-styles.css">
 </head>
 <body>
 
@@ -127,11 +128,11 @@
         </div>
       </div>
 
-      <!-- 6. Wireframes -->
+      <!-- 6. Homepage Mockups -->
       <div class="nav-item" data-tab="mockups">
         <div class="nav-item-header" onclick="switchTab('mockups')">
-          <span class="nav-icon">&#128421;</span>
-          <span class="nav-label">Wireframes</span>
+          <span class="nav-icon">&#127912;</span>
+          <span class="nav-label">Homepage Mockups</span>
         </div>
       </div>
 
@@ -1564,149 +1565,575 @@
     </section>
 
     <!-- ============================================================
-         TAB 6: MOCKUPS
+         TAB 6: HOMEPAGE MOCKUPS (Visual)
          ============================================================ -->
     <section class="tab-content" id="tab-mockups">
 
       <div class="tab-header">
-        <h1>Wireframes</h1>
-        <p>Section layouts showing proposed homepage and product page in the Shapes theme</p>
+        <h1>Homepage Mockups</h1>
+        <p>Two design directions for your new Shapes-powered homepage &mdash; using real Phab products</p>
       </div>
 
       <div class="tab-body">
 
-        <!-- Legend -->
-        <div class="section-card">
-          <div class="mockup-legend">
-            <span class="mockup-badge new">NEW</span> New section not on current site
-            <span class="mockup-badge improved">IMPROVED</span> Existing section redesigned/enhanced
-            <span class="mockup-badge exclusive">SHAPES EXCLUSIVE</span> Feature unique to Shapes theme
-            <span class="mockup-badge client-ask">CLIENT ASK</span> Section requested by Phab team
+        <!-- Palette Disclaimer -->
+        <div class="palette-note">
+          <strong>Note on colors:</strong> The teal palette below is estimated from Phab&rsquo;s current site and Brand Brief v2 (&ldquo;Smart. Calm. Real.&rdquo;). Final colors, typography, and imagery will be refined once the official brand palette is confirmed by the Phab team.
+        </div>
+
+        <!-- Direction Switcher -->
+        <div class="direction-switcher">
+          <div class="direction-card active" onclick="switchDirection('standard')">
+            <h3>Direction 1: Shapes Standard</h3>
+            <p>Clean, food-native, playful. Rounded corners, warm teal palette, product-first layout. Inspired by TruNativ on Shapes.</p>
+            <span class="direction-tag recommended">RECOMMENDED</span>
+          </div>
+          <div class="direction-card" onclick="switchDirection('premium')">
+            <h3>Direction 3: Shapes Premium</h3>
+            <p>Editorial, narrative-first. Serif headlines, monospace data, extreme whitespace. Inspired by Whole Truth Foods.</p>
+            <span class="direction-tag aspirational">ASPIRATIONAL</span>
           </div>
         </div>
 
-        <!-- Homepage Desktop -->
-        <div class="section-card">
-          <h2 class="section-title">Homepage &mdash; Desktop</h2>
-          <p class="section-subtitle">18 sections including 8 new + 4 client-requested additions &bull; Shapes theme (Candy preset)</p>
-          <div class="wireframe-device desktop">
-            <div class="wireframe-topbar">
-              <div class="wireframe-dots"><span></span><span></span><span></span></div>
-              <div class="wireframe-url">getphab.com</div>
-            </div>
-            <div class="wireframe-body">
-              <div class="wireframe-section thin accent"><span class="wf-num">1</span> Announcement Bar <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section thin dark"><span class="wf-num">2</span> Header + Mega Menu + Search <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section tall primary"><span class="wf-num">3</span> Hero Banner + Campaign Carousel <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section medium teal"><span class="wf-num">4</span> Category Tiles (Bars, Shakes, Wafers, Energy, Granola) <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section medium primary"><span class="wf-num">5</span> Best Sellers with Category Tabs + Quick Buy <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section medium accent"><span class="wf-num">6</span> Persona Social Proof Wall (Students, Moms, Fitness) <span class="mockup-badge client-ask">CLIENT ASK</span></div>
-              <div class="wireframe-section medium exclusive-bg"><span class="wf-num">7</span> &ldquo;Us vs Them&rdquo; Comparison Table <span class="mockup-badge exclusive">SHAPES EXCLUSIVE</span></div>
-              <div class="wireframe-section medium primary"><span class="wf-num">8</span> Indulgence / Guilt-Free Craving Section <span class="mockup-badge client-ask">CLIENT ASK</span></div>
-              <div class="wireframe-section medium teal"><span class="wf-num">9</span> Why Phab / &ldquo;Not Just Another Protein Bar&rdquo; <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section medium accent"><span class="wf-num">10</span> Nutritional Highlights + Per-Bar Cost Comparison <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section medium primary"><span class="wf-num">11</span> New Arrivals Carousel <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section medium teal"><span class="wf-num">12</span> Customer Reviews Carousel <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section thin dark"><span class="wf-num">13</span> Trust Badges / USP Bar <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section medium accent"><span class="wf-num">14</span> FAQs Accordion <span class="mockup-badge client-ask">CLIENT ASK</span></div>
-              <div class="wireframe-section medium primary"><span class="wf-num">15</span> Featured In / Press Logos (ET, Mint, YourStory) <span class="mockup-badge client-ask">CLIENT ASK</span></div>
-              <div class="wireframe-section medium teal"><span class="wf-num">16</span> Shoppable Reels (Video Commerce) <span class="mockup-badge client-ask">CLIENT ASK</span></div>
-              <div class="wireframe-section thin accent"><span class="wf-num">17</span> Newsletter Signup <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section medium dark"><span class="wf-num">18</span> Mega Footer (Categories, Policies, Contact, Social) <span class="mockup-badge improved">IMPROVED</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Homepage Mobile -->
-        <div class="section-card">
-          <h2 class="section-title">Homepage &mdash; Mobile</h2>
-          <p class="section-subtitle">Same 18 sections, optimized for 375px viewport &bull; 83% of purchases happen on mobile</p>
-          <div class="wireframe-device mobile">
-            <div class="wireframe-topbar mobile-bar">
-              <div class="wireframe-status-bar">9:41</div>
-              <div class="wireframe-url-mobile">getphab.com</div>
-            </div>
-            <div class="wireframe-body">
-              <div class="wireframe-section thin accent"><span class="wf-num">1</span> Announcement Bar</div>
-              <div class="wireframe-section thin dark"><span class="wf-num">2</span> Header + Hamburger + Cart</div>
-              <div class="wireframe-section tall primary"><span class="wf-num">3</span> Hero (Swipeable Campaigns)</div>
-              <div class="wireframe-section medium teal"><span class="wf-num">4</span> Category Tiles (2&times;3 Grid)</div>
-              <div class="wireframe-section medium primary"><span class="wf-num">5</span> Best Sellers (Tab + Swipeable)</div>
-              <div class="wireframe-section medium accent"><span class="wf-num">6</span> Social Proof Wall (Swipeable Cards)</div>
-              <div class="wireframe-section medium exclusive-bg"><span class="wf-num">7</span> Comparison Table (Scrollable)</div>
-              <div class="wireframe-section medium primary"><span class="wf-num">8</span> Indulgence / Craving (Full-bleed)</div>
-              <div class="wireframe-section medium teal"><span class="wf-num">9</span> Why Phab</div>
-              <div class="wireframe-section medium accent"><span class="wf-num">10</span> Nutrition + Per-Bar Cost</div>
-              <div class="wireframe-section medium primary"><span class="wf-num">11</span> New Arrivals (Swipeable)</div>
-              <div class="wireframe-section medium teal"><span class="wf-num">12</span> Reviews (Cards)</div>
-              <div class="wireframe-section thin dark"><span class="wf-num">13</span> Trust Badges (Horizontal Scroll)</div>
-              <div class="wireframe-section medium accent"><span class="wf-num">14</span> FAQs (Accordion)</div>
-              <div class="wireframe-section medium primary"><span class="wf-num">15</span> Featured In / Press</div>
-              <div class="wireframe-section medium teal"><span class="wf-num">16</span> Shoppable Reels (TikTok-style)</div>
-              <div class="wireframe-section thin accent"><span class="wf-num">17</span> Newsletter</div>
-              <div class="wireframe-section medium dark"><span class="wf-num">18</span> Footer (Accordion)</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PDP Desktop -->
-        <div class="section-card">
-          <h2 class="section-title">Product Page (PDP) &mdash; Desktop</h2>
-          <p class="section-subtitle">10 sections targeting the 83.6% PDP&rarr;ATC drop &bull; 3 unique PDP layouts for Bars, Shakes, Wafers</p>
-          <div class="wireframe-device desktop">
-            <div class="wireframe-topbar">
-              <div class="wireframe-dots"><span></span><span></span><span></span></div>
-              <div class="wireframe-url">getphab.com/products/cheat-bar-chocolate</div>
-            </div>
-            <div class="wireframe-body">
-              <div class="wireframe-section thin teal"><span class="wf-num">1</span> Breadcrumbs (Home &rsaquo; Cheat Bars &rsaquo; Chocolate) <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section pdp-layout">
-                <div class="wireframe-pdp-left">
-                  <div class="wireframe-section tall primary"><span class="wf-num">2</span> Product Gallery + Zoom + Video <span class="mockup-badge improved">IMPROVED</span></div>
-                </div>
-                <div class="wireframe-pdp-right">
-                  <div class="wireframe-section medium accent"><span class="wf-num">3</span> Product Info + Sticky ATC + Protein Badge + Scarcity <span class="mockup-badge new">NEW</span></div>
-                  <div class="wireframe-section thin teal"><span class="wf-num">4</span> Variant Selector (Flavor, Pack Size) <span class="mockup-badge improved">IMPROVED</span></div>
-                </div>
+        <!-- =============================================
+             DIRECTION 1: SHAPES STANDARD
+             ============================================= -->
+        <div id="mockup-direction-standard" class="mockup-wrapper active">
+          <div class="section-card">
+            <h2 class="section-title">Direction 1 &mdash; Shapes Standard</h2>
+            <p class="section-subtitle">18 sections &bull; Shapes theme (Candy preset) &bull; ~20-25 hrs custom dev &bull; Est. cost: &#8377;92K&ndash;1.07L</p>
+            <div class="wireframe-device desktop">
+              <div class="wireframe-topbar">
+                <div class="wireframe-dots"><span></span><span></span><span></span></div>
+                <div class="wireframe-url">getphab.com &mdash; Direction 1: Shapes Standard</div>
               </div>
-              <div class="wireframe-section medium primary"><span class="wf-num">5</span> Tabs: Description | Nutrition Facts | FAQ <span class="mockup-badge improved">IMPROVED</span></div>
-              <div class="wireframe-section medium exclusive-bg"><span class="wf-num">6</span> &ldquo;Us vs Them&rdquo; Comparison Table (Phab vs Regular Bars) <span class="mockup-badge exclusive">SHAPES EXCLUSIVE</span></div>
-              <div class="wireframe-section medium accent"><span class="wf-num">7</span> Frequently Bought Together <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section medium teal"><span class="wf-num">8</span> Customer Reviews &amp; Ratings <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section thin primary"><span class="wf-num">9</span> Recently Viewed Products <span class="mockup-badge new">NEW</span></div>
-              <div class="wireframe-section thin dark"><span class="wf-num">10</span> Related Products / You May Also Like <span class="mockup-badge improved">IMPROVED</span></div>
-            </div>
-          </div>
-        </div>
+              <div class="mockup-container dir1">
 
-        <!-- PDP Mobile -->
-        <div class="section-card">
-          <h2 class="section-title">Product Page (PDP) &mdash; Mobile</h2>
-          <p class="section-subtitle">Same 10 sections with sticky ATC bar always visible at bottom</p>
-          <div class="wireframe-device mobile">
-            <div class="wireframe-topbar mobile-bar">
-              <div class="wireframe-status-bar">9:41</div>
-              <div class="wireframe-url-mobile">getphab.com/products/cheat-bar-chocolate</div>
-            </div>
-            <div class="wireframe-body">
-              <div class="wireframe-section thin teal"><span class="wf-num">1</span> Breadcrumbs</div>
-              <div class="wireframe-section tall primary"><span class="wf-num">2</span> Product Gallery (Swipeable)</div>
-              <div class="wireframe-section medium accent"><span class="wf-num">3</span> Product Info + Protein Badge</div>
-              <div class="wireframe-section thin teal"><span class="wf-num">4</span> Variant Selector</div>
-              <div class="wireframe-section medium primary"><span class="wf-num">5</span> Tabs (Accordion on Mobile)</div>
-              <div class="wireframe-section medium exclusive-bg"><span class="wf-num">6</span> Comparison Table (Scrollable)</div>
-              <div class="wireframe-section medium accent"><span class="wf-num">7</span> Frequently Bought Together</div>
-              <div class="wireframe-section medium teal"><span class="wf-num">8</span> Reviews</div>
-              <div class="wireframe-section thin primary"><span class="wf-num">9</span> Recently Viewed</div>
-              <div class="wireframe-section thin dark"><span class="wf-num">10</span> Related Products</div>
-              <div class="wireframe-sticky-bar"><span>&#128722;</span> Add to Cart &mdash; &#8377;249 <span class="mockup-badge new">STICKY</span></div>
-            </div>
-          </div>
-        </div>
+                <!-- 1. Announcement Bar -->
+                <div class="mk-announce">
+                  FREE SHIPPING on orders above &#8377;499 <span>|</span> Use code PHAB10 for 10% off <span>|</span> &#9733; 4.55/5 from 409+ reviews
+                </div>
 
-        <div class="callout success">
-          <strong>3 unique PDP designs</strong> will be created for Phab&rsquo;s product categories: Bars (with protein comparison), Milkshakes (with flavor selector), and Wafers (with pack-size bundling). Each design optimizes for the specific purchase decision of that category.
-        </div>
+                <!-- 2. Header -->
+                <div class="mk-header">
+                  <img src="images/logo/phab-logo-black.png" alt="Phab" class="mk-logo" loading="lazy">
+                  <nav class="mk-nav">
+                    <a href="#">Cheat Bars</a>
+                    <a href="#">Protein Bars</a>
+                    <a href="#">Milkshakes</a>
+                    <a href="#">Wafers</a>
+                    <a href="#">Combos</a>
+                    <a href="#">Our Story</a>
+                  </nav>
+                  <div class="mk-header-icons">
+                    <span>&#128269;</span>
+                    <span>&#128100;</span>
+                    <span>&#128722;<span class="mk-cart-badge">3</span></span>
+                  </div>
+                </div>
+                <div class="mk-usp-bar">
+                  <div class="mk-usp-item"><span class="mk-usp-icon">&#9889;</span> 15-21g Protein</div>
+                  <div class="mk-usp-item"><span class="mk-usp-icon">&#10003;</span> No Added Sugar</div>
+                  <div class="mk-usp-item"><span class="mk-usp-icon">&#127793;</span> Real Ingredients</div>
+                  <div class="mk-usp-item"><span class="mk-usp-icon">&#9733;</span> 4.55/5 (409 Reviews)</div>
+                </div>
+
+                <!-- 3. Hero Banner -->
+                <div class="mk-hero">
+                  <div class="mk-hero-text">
+                    <h1>Protein that <em>doesn&rsquo;t taste</em> like protein.</h1>
+                    <p>Bars, shakes &amp; wafers for people who love good food. Not gym food &mdash; <strong>your food</strong>, just smarter.</p>
+                    <a href="#" class="mk-btn">Shop Best Sellers</a>
+                    <a href="#" class="mk-btn-outline">Take the Quiz</a>
+                  </div>
+                  <div class="mk-hero-img">
+                    <img src="images/hero/hero-banner-2-energy-bars.png" alt="Phab Energy Bars" loading="lazy">
+                  </div>
+                  <div class="mk-hero-dots"><span class="active"></span><span></span><span></span></div>
+                </div>
+
+                <!-- 4. Category Tiles -->
+                <div class="mk-categories">
+                  <h2 class="mk-section-title">Shop by Category</h2>
+                  <p class="mk-section-sub">Find your perfect protein snack</p>
+                  <div class="mk-cat-grid">
+                    <div class="mk-cat-card"><img src="images/categories/cat-cheat-bars.png" alt="Cheat Bars" loading="lazy"><div class="mk-cat-label">Cheat Bars &middot; 15g Protein</div></div>
+                    <div class="mk-cat-card"><img src="images/categories/cat-protein-bars.png" alt="Protein Bars" loading="lazy"><div class="mk-cat-label">Protein Bars &middot; 21g Protein</div></div>
+                    <div class="mk-cat-card"><img src="images/categories/cat-milkshakes.png" alt="Milkshakes" loading="lazy"><div class="mk-cat-label">Milkshakes &middot; 18g Protein</div></div>
+                    <div class="mk-cat-card"><img src="images/categories/cat-millet-wafers.png" alt="Millet Wafers" loading="lazy"><div class="mk-cat-label">Millet Wafers &middot; 10g Protein</div></div>
+                  </div>
+                </div>
+
+                <!-- 5. Best Sellers -->
+                <div class="mk-bestsellers">
+                  <h2 class="mk-section-title">Best Sellers</h2>
+                  <p class="mk-section-sub">India&rsquo;s most loved protein snacks</p>
+                  <div class="mk-tabs">
+                    <div class="mk-tab active">All</div>
+                    <div class="mk-tab">Cheat Bars</div>
+                    <div class="mk-tab">Protein Bars</div>
+                    <div class="mk-tab">Milkshakes</div>
+                    <div class="mk-tab">Wafers</div>
+                  </div>
+                  <div class="mk-product-grid">
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><span class="mk-product-badge mk-badge-best">BESTSELLER</span><img src="images/products/cheat-bar-variety-pack.jpg" alt="Cheat Bar Variety Pack" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">15G Cheat Bar &mdash; Variety Pack</h3><div class="mk-protein-pill">15g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;1,311</span><span class="mk-price-original">&#8377;1,380</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.8</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><span class="mk-product-badge mk-badge-sale">SALE</span><img src="images/products/21g-bar-choc-brownie.png" alt="21G Chocolate Brownie" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">21G Protein Bar &mdash; Chocolate Brownie</h3><div class="mk-protein-pill">21g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;713</span><span class="mk-price-original">&#8377;750</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.81</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><img src="images/products/11g-bar-mocha-fudge.png" alt="11G Mocha Nut Fudge" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">11G Protein Bar &mdash; Mocha Nut Fudge</h3><div class="mk-protein-pill">11g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;399</span><span class="mk-price-original">&#8377;420</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><span class="mk-product-badge mk-badge-new">NEW</span><img src="images/products/18g-milkshake-chocolate.jpg" alt="18G Chocolate Milkshake" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">18G Milkshake &mdash; Classic Chocolate</h3><div class="mk-protein-pill">18g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;713</span><span class="mk-price-original">&#8377;750</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>4.6</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><img src="images/products/cheat-bar-blueberry.jpg" alt="Cheat Bar Blueberry" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">15G Cheat Bar &mdash; Blueberry</h3><div class="mk-protein-pill">15g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;1,311</span><span class="mk-price-original">&#8377;1,380</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><img src="images/products/wafer-cookies-cream.jpg" alt="Wafer Cookies &amp; Cream" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">Millet Wafer &mdash; Cookies &amp; Cream</h3><div class="mk-protein-pill">10g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;570</span><span class="mk-price-original">&#8377;600</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.6</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><img src="images/products/21g-bar-strawberry-yogurt.png" alt="21G Strawberry Yogurt" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">21G Protein Bar &mdash; Strawberry Yogurt</h3><div class="mk-protein-pill">21g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;713</span><span class="mk-price-original">&#8377;750</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="mk-product-card">
+                      <div class="mk-product-img"><img src="images/products/18g-milkshake-mango.jpg" alt="18G Mango Magic" loading="lazy"></div>
+                      <div class="mk-product-info"><h3 class="mk-product-name">18G Milkshake &mdash; Mango Magic</h3><div class="mk-protein-pill">18g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;713</span><span class="mk-price-original">&#8377;750</span></div><div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>4.5</span></div><button class="mk-atc-btn">Add to Cart</button></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 6. Persona Social Proof -->
+                <div class="mk-personas">
+                  <h2 class="mk-section-title">Loved by 50,000+ Indians</h2>
+                  <p class="mk-section-sub">Real people, real protein, real taste</p>
+                  <div class="mk-persona-grid">
+                    <div class="mk-persona-card"><div class="mk-persona-avatar student">&#127891;</div><div class="mk-persona-label">College Students</div><p class="mk-persona-quote">&ldquo;Finally a protein bar that tastes like a chocolate bar. I keep a box in my hostel room.&rdquo;</p><div class="mk-persona-name">Priya S., 22 &bull; Delhi</div></div>
+                    <div class="mk-persona-card"><div class="mk-persona-avatar mom">&#128105;</div><div class="mk-persona-label">Working Moms</div><p class="mk-persona-quote">&ldquo;My kids love the milkshakes and don&rsquo;t even know they&rsquo;re getting 18g of protein. Win-win!&rdquo;</p><div class="mk-persona-name">Anjali M., 35 &bull; Mumbai</div></div>
+                    <div class="mk-persona-card"><div class="mk-persona-avatar fitness">&#127947;</div><div class="mk-persona-label">Fitness Enthusiasts</div><p class="mk-persona-quote">&ldquo;21g protein with zero added sugar? This is my post-workout go-to. Tastes incredible.&rdquo;</p><div class="mk-persona-name">Rahul K., 28 &bull; Bangalore</div></div>
+                  </div>
+                </div>
+
+                <!-- 7. Comparison Table (SHAPES EXCLUSIVE) -->
+                <div class="mk-compare">
+                  <h2 class="mk-section-title">Why Phab? Let the numbers speak.</h2>
+                  <p class="mk-section-sub">SHAPES EXCLUSIVE &mdash; Built-in comparison table (only theme with this feature)</p>
+                  <div class="mk-compare-table">
+                    <div class="mk-compare-header"><div>Feature</div><div>&#9733; Phab</div><div>Regular Bars</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Protein per bar</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 15&ndash;21g</div><div class="mk-compare-other">5&ndash;8g</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Added Sugar</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 0g</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> 8&ndash;15g</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Artificial Sweeteners</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> None</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> Sucralose, Aspartame</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Taste Rating</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 4.55/5 (409 reviews)</div><div class="mk-compare-other">3.2/5 avg</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Cost per gram of protein</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> &#8377;2.5/g</div><div class="mk-compare-other">&#8377;4.2/g</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Real Ingredients</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> Yes &mdash; oats, nuts, whey</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> Soy isolate, fillers</div></div>
+                  </div>
+                </div>
+
+                <!-- 8. Indulgence Section -->
+                <div class="mk-indulgence">
+                  <div class="mk-indulgence-img"><img src="images/products/cheat-bar-choc-hazelnut.jpg" alt="Chocolate Hazelnut Cheat Bar" loading="lazy"></div>
+                  <div class="mk-indulgence-text">
+                    <h2>Guilt-Free Indulgence</h2>
+                    <p>Craving something sweet? Our Cheat Bars deliver dessert-level taste with 15g protein and zero added sugar. It&rsquo;s not cheating &mdash; it&rsquo;s being smart about your cravings.</p>
+                    <a href="#" class="mk-btn">Explore Cheat Bars</a>
+                  </div>
+                </div>
+
+                <!-- 9. Why Phab -->
+                <div class="mk-whyphab">
+                  <h2 class="mk-section-title">Not Just Another Protein Bar</h2>
+                  <p class="mk-section-sub">We&rsquo;re changing how India consumes protein &mdash; through innovation in familiar formats</p>
+                  <div class="mk-why-grid">
+                    <div class="mk-why-card"><div class="mk-why-icon">&#127793;</div><h4>Clean Label</h4><p>No artificial sweeteners, no preservatives, no fillers. Just real food ingredients you can pronounce.</p></div>
+                    <div class="mk-why-card"><div class="mk-why-icon">&#127851;</div><h4>Real Taste</h4><p>We don&rsquo;t compromise on taste. Our bars, shakes &amp; wafers taste like treats &mdash; not supplements.</p></div>
+                    <div class="mk-why-card"><div class="mk-why-icon">&#128202;</div><h4>Smart Nutrition</h4><p>15&ndash;21g protein per serving. Optimized macros without the chalky, gritty texture of typical protein snacks.</p></div>
+                  </div>
+                  <div class="mk-quote-strip">&ldquo;We make protein approachable. Not for gym-goers &mdash; for everyone who wants to eat smarter.&rdquo;</div>
+                </div>
+
+                <!-- 10. Nutritional Highlights -->
+                <div class="mk-nutrition">
+                  <h2 class="mk-section-title">The Numbers Don&rsquo;t Lie</h2>
+                  <p class="mk-section-sub">How Phab stacks up per serving</p>
+                  <div class="mk-stat-grid">
+                    <div class="mk-stat-card"><div class="mk-stat-number">21g</div><div class="mk-stat-label">Max Protein / Bar</div></div>
+                    <div class="mk-stat-card"><div class="mk-stat-number">0g</div><div class="mk-stat-label">Added Sugar</div></div>
+                    <div class="mk-stat-card"><div class="mk-stat-number">&#8377;38</div><div class="mk-stat-label">Per Bar (from)</div></div>
+                    <div class="mk-stat-card"><div class="mk-stat-number">4.55</div><div class="mk-stat-label">Average Rating</div></div>
+                  </div>
+                  <div class="mk-cost-compare">
+                    <div class="mk-cost-bar-label"><span>Cost per gram of protein</span></div>
+                    <div class="mk-cost-bar"><div class="mk-cost-bar-fill phab" style="width:45%">Phab: &#8377;2.5/g</div></div>
+                    <div class="mk-cost-bar"><div class="mk-cost-bar-fill other" style="width:75%">Competitors avg: &#8377;4.2/g</div></div>
+                  </div>
+                </div>
+
+                <!-- 11. New Arrivals -->
+                <div class="mk-arrivals">
+                  <h2 class="mk-section-title">New Arrivals</h2>
+                  <p class="mk-section-sub">Fresh additions to the Phab family</p>
+                  <div class="mk-product-grid">
+                    <div class="mk-product-card"><div class="mk-product-img"><span class="mk-product-badge mk-badge-new">NEW</span><img src="images/products/wafer-strawberry.jpg" alt="Wafer Strawberry" loading="lazy"></div><div class="mk-product-info"><h3 class="mk-product-name">Millet Wafer &mdash; Strawberry Cake</h3><div class="mk-protein-pill">10g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;570</span></div><button class="mk-atc-btn">Add to Cart</button></div></div>
+                    <div class="mk-product-card"><div class="mk-product-img"><span class="mk-product-badge mk-badge-new">NEW</span><img src="images/products/10g-milkshake-pista.png" alt="10G Pista Milkshake" loading="lazy"></div><div class="mk-product-info"><h3 class="mk-product-name">10G Milkshake &mdash; Pista Power</h3><div class="mk-protein-pill">10g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;485</span></div><button class="mk-atc-btn">Add to Cart</button></div></div>
+                    <div class="mk-product-card"><div class="mk-product-img"><span class="mk-product-badge mk-badge-new">NEW</span><img src="images/products/cheat-bar-choc-peanut-butter.jpg" alt="Cheat Bar Choc PB" loading="lazy"></div><div class="mk-product-info"><h3 class="mk-product-name">15G Cheat Bar &mdash; Choc Peanut Butter</h3><div class="mk-protein-pill">15g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;1,311</span></div><button class="mk-atc-btn">Add to Cart</button></div></div>
+                    <div class="mk-product-card"><div class="mk-product-img"><span class="mk-product-badge mk-badge-new">NEW</span><img src="images/products/cheat-bar-choc-hazelnut.jpg" alt="Cheat Bar Choc Hazelnut" loading="lazy"></div><div class="mk-product-info"><h3 class="mk-product-name">15G Cheat Bar &mdash; Choc Hazelnut</h3><div class="mk-protein-pill">15g Protein</div><div class="mk-product-price"><span class="mk-price-current">&#8377;1,311</span></div><button class="mk-atc-btn">Add to Cart</button></div></div>
+                  </div>
+                </div>
+
+                <!-- 12. Customer Reviews -->
+                <div class="mk-reviews">
+                  <div class="mk-reviews-header">
+                    <div class="mk-reviews-big-rating">4.55</div>
+                    <div class="mk-reviews-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <div class="mk-reviews-count">Based on 409 verified reviews</div>
+                  </div>
+                  <div class="mk-review-grid">
+                    <div class="mk-review-card"><div class="mk-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="mk-review-text">&ldquo;The mocha nut fudge bar is INCREDIBLE. I&rsquo;ve tried every protein bar on the market and this one tastes like an actual dessert. 21g protein is a bonus!&rdquo;</p><div class="mk-review-author">Sneha P.</div><div class="mk-review-verified">&#10003; Verified Purchase</div></div>
+                    <div class="mk-review-card"><div class="mk-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="mk-review-text">&ldquo;Finally a protein milkshake that doesn&rsquo;t taste chalky. The mango flavor is perfect for summer. My kids love it too!&rdquo;</p><div class="mk-review-author">Ravi T.</div><div class="mk-review-verified">&#10003; Verified Purchase</div></div>
+                    <div class="mk-review-card"><div class="mk-review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="mk-review-text">&ldquo;Great taste, good protein content, and no added sugar. The wafers are my office snack now. Would love more flavors!&rdquo;</p><div class="mk-review-author">Deepika M.</div><div class="mk-review-verified">&#10003; Verified Purchase</div></div>
+                  </div>
+                </div>
+
+                <!-- 13. Trust Badges -->
+                <div class="mk-trust">
+                  <div class="mk-trust-item"><div class="mk-trust-icon">&#128737;</div> FSSAI Certified</div>
+                  <div class="mk-trust-item"><div class="mk-trust-icon">&#127793;</div> No Preservatives</div>
+                  <div class="mk-trust-item"><div class="mk-trust-icon">&#128300;</div> Lab Tested</div>
+                  <div class="mk-trust-item"><div class="mk-trust-icon">&#128666;</div> Free Shipping 499+</div>
+                  <div class="mk-trust-item"><div class="mk-trust-icon">&#8635;</div> Easy Returns</div>
+                </div>
+
+                <!-- 14. FAQs -->
+                <div class="mk-faq">
+                  <h2 class="mk-section-title">Frequently Asked Questions</h2>
+                  <div class="mk-faq-list">
+                    <div class="mk-faq-item"><div class="mk-faq-q">How much protein is in each Phab bar?<span class="mk-faq-chevron">&#9660;</span></div><div class="mk-faq-a">Our bars range from 11g to 21g of protein per serving, depending on the product line. Cheat Bars have 15g, standard Protein Bars have 11g or 21g options.</div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">Are Phab products suitable for vegetarians?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">What makes Phab different from other protein bars?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">Do you offer subscription plans?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">What is the shelf life of Phab products?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                  </div>
+                </div>
+
+                <!-- 15. Press Logos -->
+                <div class="mk-press">
+                  <div class="mk-press-title">As Featured In</div>
+                  <div class="mk-press-logos">
+                    <img src="images/press/entrepreneur-india.svg" alt="Entrepreneur India" loading="lazy">
+                    <img src="images/press/inc42.svg" alt="Inc42" loading="lazy">
+                    <img src="images/press/yourstory.svg" alt="YourStory" loading="lazy">
+                    <img src="images/press/bw-disrupt.svg" alt="BW Disrupt" loading="lazy">
+                    <img src="images/press/entrackr.svg" alt="Entrackr" loading="lazy">
+                  </div>
+                </div>
+
+                <!-- 16. Shoppable Reels -->
+                <div class="mk-reels">
+                  <h2 class="mk-section-title">Watch &amp; Shop</h2>
+                  <p class="mk-section-sub">See Phab in action &mdash; tap to buy</p>
+                  <div class="mk-reel-grid">
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">Unboxing</div></div>
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">Taste Test</div></div>
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">Recipe Ideas</div></div>
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">Behind the Scenes</div></div>
+                  </div>
+                </div>
+
+                <!-- 17. Newsletter -->
+                <div class="mk-newsletter">
+                  <h3>Stay in the Loop</h3>
+                  <p>New flavors, exclusive offers &amp; protein tips. No spam, ever.</p>
+                  <div class="mk-newsletter-form"><input type="text" class="mk-newsletter-input" placeholder="your@email.com" disabled><button class="mk-newsletter-btn" disabled>Subscribe</button></div>
+                </div>
+
+                <!-- 18. Footer -->
+                <div class="mk-footer">
+                  <div class="mk-footer-grid">
+                    <div class="mk-footer-brand"><img src="images/logo/phab-logo-white.png" alt="Phab" style="height:28px;filter:brightness(10);" loading="lazy"><p>Protein that doesn&rsquo;t taste like protein. Smart. Calm. Real.</p><div class="mk-footer-socials"><div class="mk-footer-social">&#119561;</div><div class="mk-footer-social">&#128247;</div><div class="mk-footer-social">&#9993;</div><div class="mk-footer-social">&#127932;</div></div></div>
+                    <div><h4>Shop</h4><ul><li>Cheat Bars</li><li>Protein Bars</li><li>Milkshakes</li><li>Millet Wafers</li><li>Combos &amp; Packs</li></ul></div>
+                    <div><h4>Help</h4><ul><li>FAQ</li><li>Shipping Policy</li><li>Return Policy</li><li>Track Order</li><li>Contact Us</li></ul></div>
+                    <div><h4>Company</h4><ul><li>Our Story</li><li>Blog</li><li>Careers</li><li>Press</li><li>Wholesale</li></ul></div>
+                  </div>
+                  <div class="mk-footer-bottom">
+                    <span>&copy; 2026 Phab. All rights reserved. FSSAI Lic: XXXXXXXXXX</span>
+                    <div class="mk-payment-icons"><div class="mk-payment-icon">VISA</div><div class="mk-payment-icon">MC</div><div class="mk-payment-icon">UPI</div><div class="mk-payment-icon">COD</div></div>
+                  </div>
+                </div>
+
+              </div><!-- end mockup-container dir1 -->
+            </div><!-- end wireframe-device -->
+          </div><!-- end section-card -->
+        </div><!-- end mockup-direction-standard -->
+
+        <!-- =============================================
+             DIRECTION 3: SHAPES PREMIUM
+             ============================================= -->
+        <div id="mockup-direction-premium" class="mockup-wrapper">
+          <div class="section-card">
+            <h2 class="section-title">Direction 3 &mdash; Shapes Premium</h2>
+            <p class="section-subtitle">18 sections &bull; Shapes theme + heavy customization &bull; ~60-90 hrs custom dev &bull; Est. cost: &#8377;2.2L&ndash;3.1L</p>
+            <div class="wireframe-device desktop">
+              <div class="wireframe-topbar">
+                <div class="wireframe-dots"><span></span><span></span><span></span></div>
+                <div class="wireframe-url">getphab.com &mdash; Direction 3: Shapes Premium (Editorial)</div>
+              </div>
+              <div class="mockup-container dir3">
+
+                <!-- 1. Announcement Bar -->
+                <div class="mk-announce">FREE SHIPPING ON ORDERS ABOVE &#8377;499 &nbsp;&middot;&nbsp; USE CODE PHAB10</div>
+
+                <!-- 2. Header -->
+                <div class="mk-header">
+                  <div class="mk-header-left"><a href="#">Shop</a><a href="#">Our Story</a><a href="#">Journal</a></div>
+                  <img src="images/logo/phab-logo-black.png" alt="Phab" class="mk-logo" loading="lazy">
+                  <div class="mk-header-right"><a href="#">Search</a><a href="#">Account</a><a href="#">Cart (3)</a></div>
+                </div>
+
+                <!-- 3. Hero -->
+                <div class="mk-hero">
+                  <h1>Real Food.<br><em>Real Protein.</em></h1>
+                  <div class="mk-hero-mono">15g protein &nbsp;|&nbsp; 0g added sugar &nbsp;|&nbsp; &#8377;38 per bar</div>
+                  <a href="#" class="mk-hero-cta">Shop the Collection &rarr;</a>
+                  <div class="mk-hero-img"><img src="images/products/cheat-bar-variety-pack.jpg" alt="Phab Cheat Bar Collection" loading="lazy"></div>
+                </div>
+
+                <!-- 4. Category Tiles -->
+                <div class="mk-categories">
+                  <h2 class="mk-section-title">The Collection</h2>
+                  <div class="mk-cat-grid">
+                    <div class="mk-cat-card"><img src="images/categories/cat-cheat-bars.png" alt="Cheat Bars" loading="lazy"><div class="mk-cat-label">Cheat Bars</div></div>
+                    <div class="mk-cat-card"><img src="images/categories/cat-protein-bars.png" alt="Protein Bars" loading="lazy"><div class="mk-cat-label">Protein Bars</div></div>
+                    <div class="mk-cat-card"><img src="images/categories/cat-milkshakes.png" alt="Milkshakes" loading="lazy"><div class="mk-cat-label">Milkshakes</div></div>
+                    <div class="mk-cat-card"><img src="images/categories/cat-millet-wafers.png" alt="Millet Wafers" loading="lazy"><div class="mk-cat-label">Millet Wafers</div></div>
+                  </div>
+                </div>
+
+                <!-- 5. Best Sellers (editorial single-product) -->
+                <div class="mk-bestsellers">
+                  <h2 class="mk-section-title" style="text-align:left;margin-bottom:48px;">Our Best Sellers</h2>
+                  <div class="mk-editorial-product">
+                    <div class="mk-editorial-img"><img src="images/products/21g-bar-choc-brownie.png" alt="21G Protein Bar Chocolate Brownie" loading="lazy"></div>
+                    <div class="mk-editorial-info">
+                      <div class="mk-mono-label">21G PROTEIN BAR</div>
+                      <h2>Chocolate Brownie</h2>
+                      <div class="mk-editorial-price">&#8377;713 / Pack of 6</div>
+                      <p>Dense, rich, and impossibly fudgy. 21 grams of whey protein wrapped in a brownie that tastes like it shouldn&rsquo;t be healthy. Zero added sugar. No artificial sweeteners. Just real chocolate, real nuts, and real protein.</p>
+                      <a href="#" class="mk-btn-editorial">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="mk-product-nav">&larr; &nbsp; 1 / 8 &nbsp; &rarr;</div>
+                </div>
+
+                <!-- 6. Persona Social Proof -->
+                <div class="mk-personas">
+                  <h2 class="mk-section-title">Who Eats Phab?</h2>
+                  <div class="mk-persona-grid">
+                    <div class="mk-persona-card"><div class="mk-persona-avatar">&#127891;</div><div class="mk-persona-label">College Students</div><p class="mk-persona-quote">&ldquo;Hostel survival food that&rsquo;s actually healthy. I keep a box in my room at all times.&rdquo;</p><div class="mk-persona-name">PRIYA S., 22 &bull; DELHI</div></div>
+                    <div class="mk-persona-card"><div class="mk-persona-avatar">&#128105;</div><div class="mk-persona-label">Working Moms</div><p class="mk-persona-quote">&ldquo;The milkshakes fooled my kids. 18g protein and they think it&rsquo;s a treat.&rdquo;</p><div class="mk-persona-name">ANJALI M., 35 &bull; MUMBAI</div></div>
+                    <div class="mk-persona-card"><div class="mk-persona-avatar">&#127947;</div><div class="mk-persona-label">Fitness Enthusiasts</div><p class="mk-persona-quote">&ldquo;21g protein, zero sugar. This replaced my post-workout shake entirely.&rdquo;</p><div class="mk-persona-name">RAHUL K., 28 &bull; BANGALORE</div></div>
+                  </div>
+                </div>
+
+                <!-- 7. Comparison Table -->
+                <div class="mk-compare">
+                  <h2 class="mk-section-title">The Honest Comparison</h2>
+                  <div class="mk-compare-table">
+                    <div class="mk-compare-header"><div>FEATURE</div><div>PHAB</div><div>OTHERS</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Protein per bar</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 15&ndash;21g</div><div class="mk-compare-other">5&ndash;8g</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Added Sugar</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 0g</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> 8&ndash;15g</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Artificial Sweeteners</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> None</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> Yes</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Taste Rating</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 4.55 / 5</div><div class="mk-compare-other">3.2 / 5</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Cost per gram protein</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> &#8377;2.5</div><div class="mk-compare-other">&#8377;4.2</div></div>
+                    <div class="mk-compare-row"><div class="mk-compare-feature">Real Ingredients</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> Oats, nuts, whey</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> Soy isolate, fillers</div></div>
+                  </div>
+                </div>
+
+                <!-- 8. Indulgence -->
+                <div class="mk-indulgence">
+                  <div class="mk-indulgence-img"><img src="images/products/cheat-bar-variety-pack.jpg" alt="Cheat Bar Collection" loading="lazy"></div>
+                  <div class="mk-indulgence-text">
+                    <h2>Guilt-Free Indulgence</h2>
+                    <p>We believe cravings aren&rsquo;t the enemy. Our Cheat Bars deliver dessert-level satisfaction with 15g of protein and absolutely zero added sugar. Every bite is intentional &mdash; crafted for people who refuse to choose between pleasure and nutrition.</p>
+                    <a href="#" class="mk-hero-cta">Explore Cheat Bars &rarr;</a>
+                  </div>
+                </div>
+
+                <!-- 9. Why Phab (narrative truth statements) -->
+                <div class="mk-whyphab">
+                  <h2>We&rsquo;re Rebuilding Trust in Protein.</h2>
+                  <div class="mk-truth-statements">
+                    <div class="mk-truth-item"><span class="mk-truth-num">01</span><span class="mk-truth-text">We don&rsquo;t hide behind proprietary blends. Every ingredient is listed, every claim is verified.</span></div>
+                    <div class="mk-truth-item"><span class="mk-truth-num">02</span><span class="mk-truth-text">We make protein for people who love food. Not for gym bros &mdash; for everyone.</span></div>
+                    <div class="mk-truth-item"><span class="mk-truth-num">03</span><span class="mk-truth-text">Zero added sugar isn&rsquo;t a marketing claim. It&rsquo;s a promise we&rsquo;ve kept across every single product.</span></div>
+                    <div class="mk-truth-item"><span class="mk-truth-num">04</span><span class="mk-truth-text">Real taste comes from real ingredients. Oats, nuts, cocoa, whey &mdash; nothing you can&rsquo;t pronounce.</span></div>
+                  </div>
+                </div>
+
+                <!-- 10. Nutritional Highlights (giant monospace numbers) -->
+                <div class="mk-nutrition">
+                  <h2 class="mk-section-title">By the Numbers</h2>
+                  <div class="mk-giant-stats">
+                    <div class="mk-giant-stat"><div class="mk-giant-number">21</div><div class="mk-giant-unit">GRAMS</div><div class="mk-giant-label">Max protein per bar</div></div>
+                    <div class="mk-giant-stat"><div class="mk-giant-number">0</div><div class="mk-giant-unit">GRAMS</div><div class="mk-giant-label">Added sugar</div></div>
+                    <div class="mk-giant-stat"><div class="mk-giant-number">38</div><div class="mk-giant-unit">RUPEES</div><div class="mk-giant-label">Per bar (from)</div></div>
+                    <div class="mk-giant-stat"><div class="mk-giant-number">409</div><div class="mk-giant-unit">REVIEWS</div><div class="mk-giant-label">4.55 average rating</div></div>
+                  </div>
+                </div>
+
+                <!-- 11. New Arrivals -->
+                <div class="mk-arrivals">
+                  <h2 class="mk-section-title">New Arrivals</h2>
+                  <div class="mk-product-strip">
+                    <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/wafer-strawberry.jpg" alt="Strawberry Wafer" loading="lazy"></div><div class="mk-strip-name">Millet Wafer &mdash; Strawberry Cake</div><div class="mk-strip-price">&#8377;570</div></div>
+                    <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/10g-milkshake-pista.png" alt="Pista Milkshake" loading="lazy"></div><div class="mk-strip-name">10G Milkshake &mdash; Pista Power</div><div class="mk-strip-price">&#8377;485</div></div>
+                    <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/cheat-bar-choc-peanut-butter.jpg" alt="Choc PB Cheat Bar" loading="lazy"></div><div class="mk-strip-name">Cheat Bar &mdash; Choc Peanut Butter</div><div class="mk-strip-price">&#8377;1,311</div></div>
+                    <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/cheat-bar-choc-hazelnut.jpg" alt="Choc Hazelnut" loading="lazy"></div><div class="mk-strip-name">Cheat Bar &mdash; Choc Hazelnut</div><div class="mk-strip-price">&#8377;1,311</div></div>
+                  </div>
+                </div>
+
+                <!-- 12. Reviews (featured single review) -->
+                <div class="mk-reviews">
+                  <div class="mk-reviews-stars" style="margin-bottom:24px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                  <div class="mk-featured-review">
+                    <p class="mk-big-quote">&ldquo;The mocha nut fudge bar is the best protein bar I&rsquo;ve ever tasted. And I&rsquo;ve tried them all. This doesn&rsquo;t taste like a protein bar &mdash; it tastes like a dessert that happens to have 21g of protein.&rdquo;</p>
+                    <div class="mk-big-author">SNEHA P. &bull; VERIFIED PURCHASE</div>
+                  </div>
+                </div>
+
+                <!-- 13. Trust -->
+                <div class="mk-trust">
+                  <div class="mk-trust-item"><span class="mk-trust-icon">&#128737;</span> FSSAI CERTIFIED</div>
+                  <div class="mk-trust-item"><span class="mk-trust-icon">&#127793;</span> NO PRESERVATIVES</div>
+                  <div class="mk-trust-item"><span class="mk-trust-icon">&#128300;</span> LAB TESTED</div>
+                  <div class="mk-trust-item"><span class="mk-trust-icon">&#128666;</span> FREE SHIPPING 499+</div>
+                  <div class="mk-trust-item"><span class="mk-trust-icon">&#8635;</span> EASY RETURNS</div>
+                </div>
+
+                <!-- 14. FAQs -->
+                <div class="mk-faq">
+                  <h2 class="mk-section-title">Questions</h2>
+                  <div class="mk-faq-list">
+                    <div class="mk-faq-item"><div class="mk-faq-q">How much protein is in each Phab bar?<span class="mk-faq-chevron">&#9660;</span></div><div class="mk-faq-a">Our bars range from 11g to 21g of protein per serving. Cheat Bars deliver 15g, while our flagship Protein Bars offer 21g of whey-based protein.</div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">Are Phab products suitable for vegetarians?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">What makes Phab different from other protein bars?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">Do you offer subscription plans?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                    <div class="mk-faq-item"><div class="mk-faq-q">What is the shelf life of Phab products?<span class="mk-faq-chevron">&#9654;</span></div></div>
+                  </div>
+                </div>
+
+                <!-- 15. Press -->
+                <div class="mk-press">
+                  <div class="mk-press-title">As Featured In</div>
+                  <div class="mk-press-logos">
+                    <img src="images/press/entrepreneur-india.svg" alt="Entrepreneur India" loading="lazy">
+                    <img src="images/press/inc42.svg" alt="Inc42" loading="lazy">
+                    <img src="images/press/yourstory.svg" alt="YourStory" loading="lazy">
+                    <img src="images/press/bw-disrupt.svg" alt="BW Disrupt" loading="lazy">
+                    <img src="images/press/entrackr.svg" alt="Entrackr" loading="lazy">
+                  </div>
+                </div>
+
+                <!-- 16. Reels -->
+                <div class="mk-reels">
+                  <h2 class="mk-section-title">Watch &amp; Shop</h2>
+                  <div class="mk-reel-grid">
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">UNBOXING</div></div>
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">TASTE TEST</div></div>
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">RECIPES</div></div>
+                    <div class="mk-reel-card"><div class="mk-reel-play">&#9654;</div><div class="mk-reel-label">BEHIND THE SCENES</div></div>
+                  </div>
+                </div>
+
+                <!-- 17. Newsletter -->
+                <div class="mk-newsletter">
+                  <h3>Stay in the Loop</h3>
+                  <p>NEW FLAVORS &middot; EXCLUSIVE OFFERS &middot; PROTEIN TIPS</p>
+                  <div class="mk-newsletter-form"><input type="text" class="mk-newsletter-input" placeholder="your@email.com" disabled><button class="mk-newsletter-btn" disabled>Subscribe</button></div>
+                </div>
+
+                <!-- 18. Footer -->
+                <div class="mk-footer">
+                  <div class="mk-footer-grid">
+                    <div><h4>Shop</h4><ul><li>Cheat Bars</li><li>Protein Bars</li><li>Milkshakes</li><li>Millet Wafers</li><li>Combos</li></ul></div>
+                    <div><h4>Help</h4><ul><li>FAQ</li><li>Shipping</li><li>Returns</li><li>Track Order</li><li>Contact</li></ul></div>
+                    <div><h4>Company</h4><ul><li>Our Story</li><li>Journal</li><li>Careers</li><li>Press</li><li>Wholesale</li></ul></div>
+                    <div><h4>Connect</h4><ul><li>Instagram</li><li>Twitter</li><li>YouTube</li><li>LinkedIn</li></ul></div>
+                  </div>
+                  <div class="mk-footer-bottom">&copy; 2026 PHAB &nbsp;&middot;&nbsp; ALL RIGHTS RESERVED &nbsp;&middot;&nbsp; FSSAI LIC: XXXXXXXXXX</div>
+                </div>
+
+              </div><!-- end mockup-container dir3 -->
+            </div><!-- end wireframe-device -->
+          </div><!-- end section-card -->
+        </div><!-- end mockup-direction-premium -->
+
+        <!-- =============================================
+             ORIGINAL WIREFRAMES (Collapsible)
+             ============================================= -->
+        <details class="section-card" style="margin-top:32px;">
+          <summary style="cursor:pointer;font-family:var(--font-main);font-size:15px;font-weight:600;color:var(--color-text-secondary);padding:4px 0;">&#9658; View Original Section Wireframes (Homepage + PDP)</summary>
+          <div style="margin-top:20px;">
+
+            <!-- Legend -->
+            <div class="mockup-legend" style="margin-bottom:20px;">
+              <span class="mockup-badge new">NEW</span> New section not on current site
+              <span class="mockup-badge improved">IMPROVED</span> Existing section redesigned
+              <span class="mockup-badge exclusive">SHAPES EXCLUSIVE</span> Unique to Shapes
+              <span class="mockup-badge client-ask">CLIENT ASK</span> Requested by Phab team
+            </div>
+
+            <!-- Homepage Desktop Wireframe -->
+            <h3 style="margin:16px 0 8px;font-size:14px;color:var(--color-text-secondary);">Homepage &mdash; Desktop (18 sections)</h3>
+            <div class="wireframe-device desktop" style="margin-bottom:24px;">
+              <div class="wireframe-topbar"><div class="wireframe-dots"><span></span><span></span><span></span></div><div class="wireframe-url">getphab.com</div></div>
+              <div class="wireframe-body">
+                <div class="wireframe-section thin accent"><span class="wf-num">1</span> Announcement Bar <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section thin dark"><span class="wf-num">2</span> Header + Mega Menu + Search <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section tall primary"><span class="wf-num">3</span> Hero Banner + Campaign Carousel <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section medium teal"><span class="wf-num">4</span> Category Tiles <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section medium primary"><span class="wf-num">5</span> Best Sellers with Category Tabs <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section medium accent"><span class="wf-num">6</span> Persona Social Proof Wall <span class="mockup-badge client-ask">CLIENT ASK</span></div>
+                <div class="wireframe-section medium exclusive-bg"><span class="wf-num">7</span> Comparison Table <span class="mockup-badge exclusive">SHAPES EXCLUSIVE</span></div>
+                <div class="wireframe-section medium primary"><span class="wf-num">8</span> Indulgence / Craving <span class="mockup-badge client-ask">CLIENT ASK</span></div>
+                <div class="wireframe-section medium teal"><span class="wf-num">9</span> Why Phab <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section medium accent"><span class="wf-num">10</span> Nutritional Highlights <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section medium primary"><span class="wf-num">11</span> New Arrivals <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section medium teal"><span class="wf-num">12</span> Customer Reviews <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section thin dark"><span class="wf-num">13</span> Trust Badges <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section medium accent"><span class="wf-num">14</span> FAQs <span class="mockup-badge client-ask">CLIENT ASK</span></div>
+                <div class="wireframe-section medium primary"><span class="wf-num">15</span> Press Logos <span class="mockup-badge client-ask">CLIENT ASK</span></div>
+                <div class="wireframe-section medium teal"><span class="wf-num">16</span> Shoppable Reels <span class="mockup-badge client-ask">CLIENT ASK</span></div>
+                <div class="wireframe-section thin accent"><span class="wf-num">17</span> Newsletter <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section medium dark"><span class="wf-num">18</span> Mega Footer <span class="mockup-badge improved">IMPROVED</span></div>
+              </div>
+            </div>
+
+            <!-- PDP Desktop Wireframe -->
+            <h3 style="margin:16px 0 8px;font-size:14px;color:var(--color-text-secondary);">Product Page &mdash; Desktop (10 sections)</h3>
+            <div class="wireframe-device desktop">
+              <div class="wireframe-topbar"><div class="wireframe-dots"><span></span><span></span><span></span></div><div class="wireframe-url">getphab.com/products/cheat-bar-chocolate</div></div>
+              <div class="wireframe-body">
+                <div class="wireframe-section thin teal"><span class="wf-num">1</span> Breadcrumbs <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section pdp-layout"><div class="wireframe-pdp-left"><div class="wireframe-section tall primary"><span class="wf-num">2</span> Product Gallery + Zoom <span class="mockup-badge improved">IMPROVED</span></div></div><div class="wireframe-pdp-right"><div class="wireframe-section medium accent"><span class="wf-num">3</span> Product Info + Sticky ATC <span class="mockup-badge new">NEW</span></div><div class="wireframe-section thin teal"><span class="wf-num">4</span> Variant Selector <span class="mockup-badge improved">IMPROVED</span></div></div></div>
+                <div class="wireframe-section medium primary"><span class="wf-num">5</span> Tabs: Description | Nutrition | FAQ <span class="mockup-badge improved">IMPROVED</span></div>
+                <div class="wireframe-section medium exclusive-bg"><span class="wf-num">6</span> Comparison Table <span class="mockup-badge exclusive">SHAPES EXCLUSIVE</span></div>
+                <div class="wireframe-section medium accent"><span class="wf-num">7</span> Frequently Bought Together <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section medium teal"><span class="wf-num">8</span> Reviews &amp; Ratings <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section thin primary"><span class="wf-num">9</span> Recently Viewed <span class="mockup-badge new">NEW</span></div>
+                <div class="wireframe-section thin dark"><span class="wf-num">10</span> Related Products <span class="mockup-badge improved">IMPROVED</span></div>
+              </div>
+            </div>
+
+          </div>
+        </details>
 
       </div>
     </section>
@@ -1971,6 +2398,29 @@
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
+    }
+
+    // Mockup Direction Switcher
+    function switchDirection(dir) {
+      var standardEl = document.getElementById('mockup-direction-standard');
+      var premiumEl = document.getElementById('mockup-direction-premium');
+      var cards = document.querySelectorAll('.direction-card');
+      if (!standardEl || !premiumEl) return;
+
+      if (dir === 'premium') {
+        standardEl.classList.remove('active');
+        premiumEl.classList.add('active');
+        cards[0].classList.remove('active');
+        cards[1].classList.add('active');
+      } else {
+        premiumEl.classList.remove('active');
+        standardEl.classList.add('active');
+        cards[1].classList.remove('active');
+        cards[0].classList.add('active');
+      }
+      // Scroll to top of the mockup area
+      var switcher = document.querySelector('.direction-switcher');
+      if (switcher) switcher.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // Mobile Sidebar Toggle
