@@ -1412,6 +1412,7 @@ table { border-collapse: collapse; }
 .mockup-badge.new { background: #dcfce7; color: #166534; }
 .mockup-badge.improved { background: #dbeafe; color: #1e40af; }
 .mockup-badge.exclusive { background: #fce7f3; color: #9d174d; }
+.mockup-badge.client-ask { background: #fef3c7; color: #92400e; }
 
 .wireframe-device {
   border: 2px solid var(--color-border);
