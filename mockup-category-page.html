@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phab Category Page Mockup — Protein Bars Collection</title>
+  <link rel="stylesheet" href="mockup-styles.css">
+  <style>
+    /* Minimal browser chrome + page styles (extracted from SPA) */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f0f0f5; padding: 24px; color: #1a1a2e; }
+    h1.page-title { font-size: 22px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+    p.page-subtitle { font-size: 13px; color: #666; margin-bottom: 20px; text-align: center; }
+    .wireframe-device { border: 2px solid #e0e0e5; border-radius: 12px; overflow: visible; margin: 0 auto; background: #fafafa; max-width: 100%; }
+    .wireframe-topbar { background: #1d1d20; padding: 10px 16px; display: flex; align-items: center; gap: 12px; border-radius: 10px 10px 0 0; }
+    .wireframe-dots { display: flex; gap: 6px; }
+    .wireframe-dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.15); }
+    .wireframe-dots span:first-child { background: #ff5f57; }
+    .wireframe-dots span:nth-child(2) { background: #ffbd2e; }
+    .wireframe-dots span:nth-child(3) { background: #28c840; }
+    .wireframe-url { flex: 1; background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 6px; font-size: 11px; color: rgba(255,255,255,0.6); font-family: monospace; }
+    .disclaimer { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; font-size: 12px; color: #856404; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">Category Page — Protein Bars Collection</h1>
+  <p class="page-subtitle">Showing clickable grammage tabs (10g, 11g, 21g) + per-bar pricing &bull; Applies to Protein Bars &amp; RTDs</p>
+  <div class="disclaimer">Colors estimated — will be refined once brand assets arrive. This is a visual mockup, not a live site.</div>
+
+  <div class="wireframe-device desktop">
+    <div class="wireframe-topbar">
+      <div class="wireframe-dots"><span></span><span></span><span></span></div>
+      <div class="wireframe-url">getphab.com/collections/protein-bars</div>
+    </div>
+    <div class="mockup-container dir1 mk-category-page">
+
+      <!-- Announcement Bar -->
+      <div class="mk-announce">
+        FREE SHIPPING on orders above &#8377;499 <span>|</span> Use code PHAB10 for 10% off
+      </div>
+
+      <!-- Header -->
+      <div class="mk-header">
+        <img src="images/logo/phab-logo-black.png" alt="Phab" class="mk-logo" loading="lazy">
+        <nav class="mk-nav">
+          <a href="#">Cheat Bars</a>
+          <a href="#" class="mk-nav-active">Protein Bars</a>
+          <a href="#">Milkshakes</a>
+          <a href="#">Wafers</a>
+          <a href="#">Combos</a>
+          <a href="#">Our Story</a>
+        </nav>
+        <div class="mk-header-icons">
+          <span>&#128269;</span>
+          <span>&#128100;</span>
+          <span>&#128722;<span class="mk-cart-badge">3</span></span>
+        </div>
+      </div>
+
+      <!-- Breadcrumbs -->
+      <div class="mk-breadcrumbs">Home &rsaquo; Collections &rsaquo; <strong>Protein Bars</strong></div>
+
+      <!-- Category Banner -->
+      <div class="mk-cat-banner">
+        <h1>Protein Bars</h1>
+        <p>From 10g to 21g protein per bar. Zero added sugar. Real ingredients. Find the perfect bar for your goals.</p>
+      </div>
+
+      <!-- Grammage Tabs -->
+      <div class="mk-grammage-section">
+        <div class="mk-grammage-label">Filter by protein content:</div>
+        <div class="mk-grammage-tabs">
+          <button class="mk-grammage-tab active" onclick="this.parentElement.querySelectorAll('.mk-grammage-tab').forEach(t=>t.classList.remove('active'));this.classList.add('active');">All Bars</button>
+          <button class="mk-grammage-tab" onclick="this.parentElement.querySelectorAll('.mk-grammage-tab').forEach(t=>t.classList.remove('active'));this.classList.add('active');">
+            <span class="mk-grammage-icon">&#9889;</span> 10g Protein
+          </button>
+          <button class="mk-grammage-tab" onclick="this.parentElement.querySelectorAll('.mk-grammage-tab').forEach(t=>t.classList.remove('active'));this.classList.add('active');">
+            <span class="mk-grammage-icon">&#128170;</span> 11g Protein
+          </button>
+          <button class="mk-grammage-tab" onclick="this.parentElement.querySelectorAll('.mk-grammage-tab').forEach(t=>t.classList.remove('active'));this.classList.add('active');">
+            <span class="mk-grammage-icon">&#127942;</span> 15g Protein
+          </button>
+          <button class="mk-grammage-tab" onclick="this.parentElement.querySelectorAll('.mk-grammage-tab').forEach(t=>t.classList.remove('active'));this.classList.add('active');">
+            <span class="mk-grammage-icon">&#128293;</span> 21g Protein
+          </button>
+        </div>
+      </div>
+
+      <!-- Sort & Filter Bar -->
+      <div class="mk-filter-bar">
+        <div class="mk-filter-count">Showing 12 products</div>
+        <div class="mk-filter-controls">
+          <select class="mk-filter-select" disabled>
+            <option>Sort by: Best Selling</option>
+          </select>
+          <select class="mk-filter-select" disabled>
+            <option>Filter by: Flavour</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="mk-product-grid mk-cat-product-grid">
+        <div class="mk-product-card">
+          <div class="mk-product-img"><span class="mk-product-badge mk-badge-best">BESTSELLER</span><img src="images/products/21g-bar-choc-brownie.png" alt="21G Chocolate Brownie" loading="lazy"></div>
+          <div class="mk-product-info">
+            <h3 class="mk-product-name">21G Protein Bar &mdash; Chocolate Brownie</h3>
+            <div class="mk-protein-pill">21g Protein</div>
+            <div class="mk-product-price"><span class="mk-price-current">&#8377;713</span><span class="mk-price-original">&#8377;750</span><span class="mk-per-unit">(&#8377;119/bar)</span></div>
+            <div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.81</span></div>
+            <button class="mk-atc-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mk-product-card">
+          <div class="mk-product-img"><img src="images/products/21g-bar-strawberry-yogurt.png" alt="21G Strawberry Yogurt" loading="lazy"></div>
+          <div class="mk-product-info">
+            <h3 class="mk-product-name">21G Protein Bar &mdash; Strawberry Yogurt</h3>
+            <div class="mk-protein-pill">21g Protein</div>
+            <div class="mk-product-price"><span class="mk-price-current">&#8377;713</span><span class="mk-price-original">&#8377;750</span><span class="mk-per-unit">(&#8377;119/bar)</span></div>
+            <div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7</span></div>
+            <button class="mk-atc-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mk-product-card">
+          <div class="mk-product-img"><span class="mk-product-badge mk-badge-sale">SALE</span><img src="images/products/11g-bar-mocha-fudge.png" alt="11G Mocha Nut Fudge" loading="lazy"></div>
+          <div class="mk-product-info">
+            <h3 class="mk-product-name">11G Protein Bar &mdash; Mocha Nut Fudge</h3>
+            <div class="mk-protein-pill">11g Protein</div>
+            <div class="mk-product-price"><span class="mk-price-current">&#8377;399</span><span class="mk-price-original">&#8377;420</span><span class="mk-per-unit">(&#8377;67/bar)</span></div>
+            <div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0</span></div>
+            <button class="mk-atc-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mk-product-card">
+          <div class="mk-product-img"><span class="mk-product-badge mk-badge-new">NEW</span><img src="images/products/cheat-bar-choc-peanut-butter.jpg" alt="Choc PB" loading="lazy"></div>
+          <div class="mk-product-info">
+            <h3 class="mk-product-name">15G Cheat Bar &mdash; Choc Peanut Butter</h3>
+            <div class="mk-protein-pill">15g Protein</div>
+            <div class="mk-product-price"><span class="mk-price-current">&#8377;219</span><span class="mk-per-unit">(&#8377;219/bar)</span></div>
+            <div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>4.5</span></div>
+            <button class="mk-atc-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mk-product-card">
+          <div class="mk-product-img"><img src="images/products/cheat-bar-choc-hazelnut.jpg" alt="Choc Hazelnut" loading="lazy"></div>
+          <div class="mk-product-info">
+            <h3 class="mk-product-name">15G Cheat Bar &mdash; Choc Hazelnut</h3>
+            <div class="mk-protein-pill">15g Protein</div>
+            <div class="mk-product-price"><span class="mk-price-current">&#8377;219</span><span class="mk-per-unit">(&#8377;219/bar)</span></div>
+            <div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.6</span></div>
+            <button class="mk-atc-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mk-product-card">
+          <div class="mk-product-img"><img src="images/products/cheat-bar-blueberry.jpg" alt="Blueberry" loading="lazy"></div>
+          <div class="mk-product-info">
+            <h3 class="mk-product-name">15G Cheat Bar &mdash; Blueberry</h3>
+            <div class="mk-protein-pill">15g Protein</div>
+            <div class="mk-product-price"><span class="mk-price-current">&#8377;219</span><span class="mk-per-unit">(&#8377;219/bar)</span></div>
+            <div class="mk-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7</span></div>
+            <button class="mk-atc-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust bar -->
+      <div class="mk-trust" style="margin-top:24px;">
+        <div class="mk-trust-item"><div class="mk-trust-icon">&#128737;</div> FSSAI Certified</div>
+        <div class="mk-trust-item"><div class="mk-trust-icon">&#127793;</div> No Preservatives</div>
+        <div class="mk-trust-item"><div class="mk-trust-icon">&#128300;</div> Lab Tested</div>
+        <div class="mk-trust-item"><div class="mk-trust-icon">&#128666;</div> Free Shipping 499+</div>
+      </div>
+
+    </div><!-- end mockup-container -->
+  </div><!-- end wireframe-device -->
+
+  <p style="text-align:center;font-size:11px;color:#999;margin-top:16px;">Prepared by Growisto for Phab &bull; Visual mockup only &bull; Not a live site</p>
+
+</body>
+</html>

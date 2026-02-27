@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phab Homepage Mockup — Direction 3: Shapes Premium</title>
+  <link rel="stylesheet" href="mockup-styles.css">
+  <style>
+    /* Minimal browser chrome + page styles (extracted from SPA) */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f0f0f5; padding: 24px; color: #1a1a2e; }
+    h1.page-title { font-size: 22px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+    p.page-subtitle { font-size: 13px; color: #666; margin-bottom: 20px; text-align: center; }
+    .wireframe-device { border: 2px solid #e0e0e5; border-radius: 12px; overflow: visible; margin: 0 auto; background: #fafafa; max-width: 100%; }
+    .wireframe-topbar { background: #1d1d20; padding: 10px 16px; display: flex; align-items: center; gap: 12px; border-radius: 10px 10px 0 0; }
+    .wireframe-dots { display: flex; gap: 6px; }
+    .wireframe-dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.15); }
+    .wireframe-dots span:first-child { background: #ff5f57; }
+    .wireframe-dots span:nth-child(2) { background: #ffbd2e; }
+    .wireframe-dots span:nth-child(3) { background: #28c840; }
+    .wireframe-url { flex: 1; background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 6px; font-size: 11px; color: rgba(255,255,255,0.6); font-family: monospace; }
+    .disclaimer { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; font-size: 12px; color: #856404; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">Direction 3 — Shapes Premium</h1>
+  <p class="page-subtitle">18 sections &bull; Shapes theme + heavy customization &bull; ~60-90 hrs custom dev &bull; Est. cost: &#8377;2.2L–3.1L</p>
+  <div class="disclaimer">Colors estimated — will be refined once brand assets arrive. This is a visual mockup, not a live site.</div>
+
+  <div class="wireframe-device desktop">
+    <div class="wireframe-topbar">
+      <div class="wireframe-dots"><span></span><span></span><span></span></div>
+      <div class="wireframe-url">getphab.com — Direction 3: Shapes Premium (Editorial)</div>
+    </div>
+    <div class="mockup-container dir3">
+
+      <!-- 1. Announcement Bar -->
+      <div class="mk-announce">FREE SHIPPING ON ORDERS ABOVE &#8377;499 &nbsp;&middot;&nbsp; USE CODE PHAB10</div>
+
+      <!-- 2. Header -->
+      <div class="mk-header">
+        <div class="mk-header-left"><a href="#">Shop</a><a href="#">Our Story</a><a href="#">Journal</a></div>
+        <img src="images/logo/phab-logo-black.png" alt="Phab" class="mk-logo" loading="lazy">
+        <div class="mk-header-right"><a href="#">Search</a><a href="#">Account</a><a href="#">Cart (3)</a></div>
+      </div>
+
+      <!-- 3. Hero -->
+      <div class="mk-hero">
+        <h1>Real Food.<br><em>Real Protein.</em></h1>
+        <div class="mk-hero-mono">15g protein &nbsp;|&nbsp; 0g added sugar &nbsp;|&nbsp; &#8377;38 per bar</div>
+        <a href="#" class="mk-hero-cta">Shop the Collection &rarr;</a>
+        <div class="mk-hero-img"><img src="images/products/cheat-bar-variety-pack.jpg" alt="Phab Cheat Bar Collection" loading="lazy"></div>
+      </div>
+
+      <!-- 4. Category Tiles -->
+      <div class="mk-categories">
+        <h2 class="mk-section-title">The Collection</h2>
+        <div class="mk-cat-grid">
+          <div class="mk-cat-card"><img src="images/categories/cat-cheat-bars.png" alt="Cheat Bars" loading="lazy"><div class="mk-cat-label">Cheat Bars</div></div>
+          <div class="mk-cat-card"><img src="images/categories/cat-protein-bars.png" alt="Protein Bars" loading="lazy"><div class="mk-cat-label">Protein Bars</div></div>
+          <div class="mk-cat-card"><img src="images/categories/cat-milkshakes.png" alt="Milkshakes" loading="lazy"><div class="mk-cat-label">Milkshakes</div></div>
+          <div class="mk-cat-card"><img src="images/categories/cat-millet-wafers.png" alt="Millet Wafers" loading="lazy"><div class="mk-cat-label">Millet Wafers</div></div>
+        </div>
+      </div>
+
+      <!-- 5. Best Sellers (editorial single-product) -->
+      <div class="mk-bestsellers">
+        <h2 class="mk-section-title" style="text-align:left;margin-bottom:48px;">Our Best Sellers</h2>
+        <div class="mk-editorial-product">
+          <div class="mk-editorial-img"><img src="images/products/21g-bar-choc-brownie.png" alt="21G Protein Bar Chocolate Brownie" loading="lazy"></div>
+          <div class="mk-editorial-info">
+            <div class="mk-mono-label">21G PROTEIN BAR</div>
+            <h2>Chocolate Brownie</h2>
+            <div class="mk-editorial-price">&#8377;713 / Pack of 6 <span class="mk-per-unit">(&#8377;119/bar)</span></div>
+            <p>Dense, rich, and impossibly fudgy. 21 grams of whey protein wrapped in a brownie that tastes like it shouldn&rsquo;t be healthy. Zero added sugar. No artificial sweeteners. Just real chocolate, real nuts, and real protein.</p>
+            <a href="#" class="mk-btn-editorial">Add to Cart</a>
+          </div>
+        </div>
+        <div class="mk-product-nav">&larr; &nbsp; 1 / 8 &nbsp; &rarr;</div>
+      </div>
+
+      <!-- 6. Social Proof Wall -->
+      <div class="mk-social-wall">
+        <h2 class="mk-section-title">Who Eats Phab?</h2>
+        <div class="mk-wall-grid">
+          <div class="mk-wall-card" onclick="this.classList.toggle('expanded')">
+            <div class="mk-wall-photo"><span class="mk-wall-emoji">&#127891;</span></div>
+            <div class="mk-wall-category">COLLEGE STUDENTS</div>
+            <div class="mk-wall-question">What do college students say about our Cheat Bars?</div>
+            <div class="mk-wall-featured-quote">&ldquo;Hostel survival food that&rsquo;s actually healthy.&rdquo;</div>
+            <div class="mk-wall-count">127 REVIEWS</div>
+            <div class="mk-wall-expand-label">See all reviews &darr;</div>
+            <div class="mk-wall-reviews-panel">
+              <div class="mk-wall-review"><div class="mk-wall-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;My roommate got me hooked. We order the variety pack every month.&rdquo;</p><span class="mk-wall-review-author">AARAV K., 20 &bull; PUNE</span></div>
+              <div class="mk-wall-review"><div class="mk-wall-review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p>&ldquo;Perfect for late-night study sessions. 15g protein keeps me full.&rdquo;</p><span class="mk-wall-review-author">NEHA R., 21 &bull; BANGALORE</span></div>
+            </div>
+          </div>
+          <div class="mk-wall-card" onclick="this.classList.toggle('expanded')">
+            <div class="mk-wall-photo"><span class="mk-wall-emoji">&#128105;</span></div>
+            <div class="mk-wall-category">WORKING MOMS</div>
+            <div class="mk-wall-question">What do Moms have to say about our savoury bars?</div>
+            <div class="mk-wall-featured-quote">&ldquo;The milkshakes fooled my kids. 18g protein and they think it&rsquo;s a treat.&rdquo;</div>
+            <div class="mk-wall-count">89 REVIEWS</div>
+            <div class="mk-wall-expand-label">See all reviews &darr;</div>
+            <div class="mk-wall-reviews-panel">
+              <div class="mk-wall-review"><div class="mk-wall-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Packed these for my son&rsquo;s lunch box. He thinks it&rsquo;s a chocolate treat.&rdquo;</p><span class="mk-wall-review-author">ANJALI M., 35 &bull; MUMBAI</span></div>
+              <div class="mk-wall-review"><div class="mk-wall-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Healthy snacks my kids actually eat. That&rsquo;s the whole review.&rdquo;</p><span class="mk-wall-review-author">SUNITA G., 38 &bull; HYDERABAD</span></div>
+            </div>
+          </div>
+          <div class="mk-wall-card" onclick="this.classList.toggle('expanded')">
+            <div class="mk-wall-photo"><span class="mk-wall-emoji">&#127947;</span></div>
+            <div class="mk-wall-category">FITNESS ENTHUSIASTS</div>
+            <div class="mk-wall-question">What do fitness lovers say about our Protein Bars?</div>
+            <div class="mk-wall-featured-quote">&ldquo;21g protein, zero sugar. This replaced my post-workout shake entirely.&rdquo;</div>
+            <div class="mk-wall-count">193 REVIEWS</div>
+            <div class="mk-wall-expand-label">See all reviews &darr;</div>
+            <div class="mk-wall-reviews-panel">
+              <div class="mk-wall-review"><div class="mk-wall-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Best macro-friendly bar in India. 21g protein at &#8377;119/bar is unbeatable.&rdquo;</p><span class="mk-wall-review-author">RAHUL K., 28 &bull; BANGALORE</span></div>
+              <div class="mk-wall-review"><div class="mk-wall-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;My trainer recommended Phab. It actually tastes incredible.&rdquo;</p><span class="mk-wall-review-author">ADITI S., 30 &bull; MUMBAI</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Comparison Table -->
+      <div class="mk-compare">
+        <h2 class="mk-section-title">The Honest Comparison</h2>
+        <div class="mk-compare-table">
+          <div class="mk-compare-header"><div>FEATURE</div><div>PHAB</div><div>OTHERS</div></div>
+          <div class="mk-compare-row"><div class="mk-compare-feature">Protein per bar</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 15&ndash;21g</div><div class="mk-compare-other">5&ndash;8g</div></div>
+          <div class="mk-compare-row"><div class="mk-compare-feature">Added Sugar</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 0g</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> 8&ndash;15g</div></div>
+          <div class="mk-compare-row"><div class="mk-compare-feature">Artificial Sweeteners</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> None</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> Yes</div></div>
+          <div class="mk-compare-row"><div class="mk-compare-feature">Taste Rating</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> 4.55 / 5</div><div class="mk-compare-other">3.2 / 5</div></div>
+          <div class="mk-compare-row"><div class="mk-compare-feature">Cost per gram protein</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> &#8377;2.5</div><div class="mk-compare-other">&#8377;4.2</div></div>
+          <div class="mk-compare-row"><div class="mk-compare-feature">Real Ingredients</div><div class="mk-compare-phab"><span class="mk-check">&#10003;</span> Oats, nuts, whey</div><div class="mk-compare-other"><span class="mk-cross">&#10007;</span> Soy isolate, fillers</div></div>
+        </div>
+      </div>
+
+      <!-- 8. Indulgence — Editorial Craving Tiles -->
+      <div class="mk-indulgence-v2">
+        <h2 class="mk-section-title">Indulge in the Most Calorie-Efficient Way</h2>
+        <div class="mk-craving-grid">
+          <div class="mk-craving-tile">
+            <div class="mk-craving-img"><img src="images/products/cheat-bar-choc-hazelnut.jpg" alt="Choco Hazelnut" loading="lazy"></div>
+            <div class="mk-craving-text">
+              <div class="mk-craving-prompt">Craving chocolate?</div>
+              <div class="mk-craving-product">Choco Hazelnut Cheat Bar</div>
+              <div class="mk-craving-meta">15G PROTEIN &bull; &#8377;219/BAR</div>
+              <a href="#" class="mk-btn-editorial">Shop Now</a>
+            </div>
+          </div>
+          <div class="mk-craving-tile">
+            <div class="mk-craving-img"><img src="images/products/21g-bar-choc-brownie.png" alt="Brownie" loading="lazy"></div>
+            <div class="mk-craving-text">
+              <div class="mk-craving-prompt">Craving dessert?</div>
+              <div class="mk-craving-product">Brownie Protein Bar</div>
+              <div class="mk-craving-meta">21G PROTEIN &bull; &#8377;119/BAR</div>
+              <a href="#" class="mk-btn-editorial">Shop Now</a>
+            </div>
+          </div>
+          <div class="mk-craving-tile">
+            <div class="mk-craving-img"><img src="images/products/cheat-bar-blueberry.jpg" alt="Blueberry" loading="lazy"></div>
+            <div class="mk-craving-text">
+              <div class="mk-craving-prompt">Craving cheesecake?</div>
+              <div class="mk-craving-product">Blueberry Cheat Bar</div>
+              <div class="mk-craving-meta">15G PROTEIN &bull; &#8377;219/BAR</div>
+              <a href="#" class="mk-btn-editorial">Shop Now</a>
+            </div>
+          </div>
+          <div class="mk-craving-tile">
+            <div class="mk-craving-img"><img src="images/products/18g-milkshake-chocolate.jpg" alt="Milkshake" loading="lazy"></div>
+            <div class="mk-craving-text">
+              <div class="mk-craving-prompt">Need an energy boost?</div>
+              <div class="mk-craving-product">Chocolate Milkshake</div>
+              <div class="mk-craving-meta">18G PROTEIN &bull; &#8377;119/BOTTLE</div>
+              <a href="#" class="mk-btn-editorial">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Why Phab — Editorial Manifesto -->
+      <div class="mk-whyphab">
+        <h2>We&rsquo;re Rebuilding Trust in Protein.</h2>
+        <div class="mk-truth-statements">
+          <div class="mk-truth-item"><span class="mk-truth-num">01</span><span class="mk-truth-text"><strong>Nutritionist-Crafted.</strong> Every Phab product is formulated and led by certified nutritionists &mdash; not just marketed as healthy.</span></div>
+          <div class="mk-truth-item"><span class="mk-truth-num">02</span><span class="mk-truth-text"><strong>Best Calories Ratio.</strong> More protein, fewer calories. 15&ndash;21g protein in under 200 calories per serving.</span></div>
+          <div class="mk-truth-item"><span class="mk-truth-num">03</span><span class="mk-truth-text"><strong>Indulgent by Design.</strong> Brownie, cheesecake, hazelnut &mdash; flavors you actually crave. We refuse to compromise on taste.</span></div>
+          <div class="mk-truth-item"><span class="mk-truth-num">04</span><span class="mk-truth-text"><strong>Zero Added Sugar.</strong> Not low sugar. ZERO. Across every single product. That&rsquo;s a promise, not a marketing claim.</span></div>
+          <div class="mk-truth-item"><span class="mk-truth-num">05</span><span class="mk-truth-text"><strong>Light on the Gut.</strong> No bloating, no heaviness. Oats, nuts, cocoa, whey &mdash; real ingredients your stomach recognizes.</span></div>
+        </div>
+
+        <!-- Blindfold Taste Test Video -->
+        <div class="mk-video-section">
+          <div class="mk-video-content">
+            <h3>The Blindfold Taste Test</h3>
+            <p>We gave people a regular chocolate and a Phab Cheat Bar &mdash; blindfolded.</p>
+            <div class="mk-video-highlight">&ldquo;The one you picked has 30% fewer calories and 15g more protein.&rdquo;</div>
+          </div>
+          <div class="mk-video-player">
+            <div class="mk-video-placeholder">
+              <div class="mk-video-play-btn">&#9654;</div>
+              <div class="mk-video-label">BLINDFOLD TASTE TEST &mdash; 2:14</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Nutritional Highlights -->
+      <div class="mk-nutrition">
+        <h2 class="mk-section-title">By the Numbers</h2>
+        <div class="mk-giant-stats">
+          <div class="mk-giant-stat"><div class="mk-giant-number">21</div><div class="mk-giant-unit">GRAMS</div><div class="mk-giant-label">Max protein per bar</div></div>
+          <div class="mk-giant-stat"><div class="mk-giant-number">0</div><div class="mk-giant-unit">GRAMS</div><div class="mk-giant-label">Added sugar</div></div>
+          <div class="mk-giant-stat"><div class="mk-giant-number">38</div><div class="mk-giant-unit">RUPEES</div><div class="mk-giant-label">Per bar (from)</div></div>
+          <div class="mk-giant-stat"><div class="mk-giant-number">409</div><div class="mk-giant-unit">REVIEWS</div><div class="mk-giant-label">4.55 average rating</div></div>
+        </div>
+      </div>
+
+      <!-- 11. New Arrivals -->
+      <div class="mk-arrivals">
+        <h2 class="mk-section-title">New Arrivals</h2>
+        <div class="mk-product-strip">
+          <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/wafer-strawberry.jpg" alt="Strawberry Wafer" loading="lazy"></div><div class="mk-strip-name">Millet Wafer &mdash; Strawberry Cake</div><div class="mk-strip-price">&#8377;570</div></div>
+          <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/10g-milkshake-pista.png" alt="Pista Milkshake" loading="lazy"></div><div class="mk-strip-name">10G Milkshake &mdash; Pista Power</div><div class="mk-strip-price">&#8377;485</div></div>
+          <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/cheat-bar-choc-peanut-butter.jpg" alt="Choc PB Cheat Bar" loading="lazy"></div><div class="mk-strip-name">Cheat Bar &mdash; Choc Peanut Butter</div><div class="mk-strip-price">&#8377;1,311</div></div>
+          <div class="mk-strip-card"><div class="mk-strip-img"><img src="images/products/cheat-bar-choc-hazelnut.jpg" alt="Choc Hazelnut" loading="lazy"></div><div class="mk-strip-name">Cheat Bar &mdash; Choc Hazelnut</div><div class="mk-strip-price">&#8377;1,311</div></div>
+        </div>
+      </div>
+
+      <!-- 12. Reviews -->
+      <div class="mk-reviews">
+        <div class="mk-reviews-stars" style="margin-bottom:24px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="mk-featured-review">
+          <p class="mk-big-quote">&ldquo;The mocha nut fudge bar is the best protein bar I&rsquo;ve ever tasted. And I&rsquo;ve tried them all. This doesn&rsquo;t taste like a protein bar &mdash; it tastes like a dessert that happens to have 21g of protein.&rdquo;</p>
+          <div class="mk-big-author">SNEHA P. &bull; VERIFIED PURCHASE</div>
+        </div>
+      </div>
+
+      <!-- 13. Trust -->
+      <div class="mk-trust">
+        <div class="mk-trust-item"><span class="mk-trust-icon">&#128737;</span> FSSAI CERTIFIED</div>
+        <div class="mk-trust-item"><span class="mk-trust-icon">&#127793;</span> NO PRESERVATIVES</div>
+        <div class="mk-trust-item"><span class="mk-trust-icon">&#128300;</span> LAB TESTED</div>
+        <div class="mk-trust-item"><span class="mk-trust-icon">&#128666;</span> FREE SHIPPING 499+</div>
+        <div class="mk-trust-item"><span class="mk-trust-icon">&#8635;</span> EASY RETURNS</div>
+      </div>
+
+      <!-- 14. FAQs -->
+      <div class="mk-faq">
+        <h2 class="mk-section-title">Questions</h2>
+        <div class="mk-faq-list">
+          <div class="mk-faq-item"><div class="mk-faq-q">How much protein is in each Phab bar?<span class="mk-faq-chevron">&#9660;</span></div><div class="mk-faq-a">Our bars range from 11g to 21g of protein per serving. Cheat Bars deliver 15g, while our flagship Protein Bars offer 21g of whey-based protein.</div></div>
+          <div class="mk-faq-item"><div class="mk-faq-q">Are Phab products suitable for vegetarians?<span class="mk-faq-chevron">&#9654;</span></div></div>
+          <div class="mk-faq-item"><div class="mk-faq-q">What makes Phab different from other protein bars?<span class="mk-faq-chevron">&#9654;</span></div></div>
+          <div class="mk-faq-item"><div class="mk-faq-q">Do you offer subscription plans?<span class="mk-faq-chevron">&#9654;</span></div></div>
+          <div class="mk-faq-item"><div class="mk-faq-q">What is the shelf life of Phab products?<span class="mk-faq-chevron">&#9654;</span></div></div>
+        </div>
+      </div>
+
+      <!-- 15. Press -->
+      <div class="mk-press">
+        <div class="mk-press-title">As Featured In</div>
+        <div class="mk-press-logos">
+          <img src="images/press/entrepreneur-india.svg" alt="Entrepreneur India" loading="lazy">
+          <img src="images/press/inc42.svg" alt="Inc42" loading="lazy">
+          <img src="images/press/yourstory.svg" alt="YourStory" loading="lazy">
+          <img src="images/press/bw-disrupt.svg" alt="BW Disrupt" loading="lazy">
+          <img src="images/press/entrackr.svg" alt="Entrackr" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 16. Shoppable Reels -->
+      <div class="mk-reels-v2">
+        <h2 class="mk-section-title">Watch &amp; Shop</h2>
+        <div class="mk-reel-grid-v2">
+          <div class="mk-reel-card-v2">
+            <div class="mk-reel-video"><div class="mk-reel-play-v2">&#9654;</div><div class="mk-reel-tag">&#128293; TRENDING</div></div>
+            <div class="mk-reel-info">
+              <div class="mk-reel-product-name">15G Cheat Bar &mdash; Variety Pack</div>
+              <div class="mk-reel-pricing"><span class="mk-reel-price">&#8377;1,311</span> <span class="mk-reel-original">&#8377;1,380</span> <span class="mk-reel-discount">5% OFF</span></div>
+              <button class="mk-reel-buy">BUY NOW</button>
+            </div>
+          </div>
+          <div class="mk-reel-card-v2">
+            <div class="mk-reel-video"><div class="mk-reel-play-v2">&#9654;</div></div>
+            <div class="mk-reel-info">
+              <div class="mk-reel-product-name">21G Protein Bar &mdash; Choc Brownie</div>
+              <div class="mk-reel-pricing"><span class="mk-reel-price">&#8377;713</span> <span class="mk-reel-original">&#8377;750</span> <span class="mk-reel-discount">5% OFF</span></div>
+              <button class="mk-reel-buy">BUY NOW</button>
+            </div>
+          </div>
+          <div class="mk-reel-card-v2">
+            <div class="mk-reel-video"><div class="mk-reel-play-v2">&#9654;</div><div class="mk-reel-tag">&#127775; NEW</div></div>
+            <div class="mk-reel-info">
+              <div class="mk-reel-product-name">18G Milkshake &mdash; Chocolate</div>
+              <div class="mk-reel-pricing"><span class="mk-reel-price">&#8377;713</span> <span class="mk-reel-original">&#8377;750</span> <span class="mk-reel-discount">5% OFF</span></div>
+              <button class="mk-reel-buy">BUY NOW</button>
+            </div>
+          </div>
+          <div class="mk-reel-card-v2">
+            <div class="mk-reel-video"><div class="mk-reel-play-v2">&#9654;</div></div>
+            <div class="mk-reel-info">
+              <div class="mk-reel-product-name">Millet Wafer &mdash; Cookies &amp; Cream</div>
+              <div class="mk-reel-pricing"><span class="mk-reel-price">&#8377;570</span> <span class="mk-reel-original">&#8377;600</span> <span class="mk-reel-discount">5% OFF</span></div>
+              <button class="mk-reel-buy">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 17. Newsletter -->
+      <div class="mk-newsletter">
+        <h3>Stay in the Loop</h3>
+        <p>NEW FLAVORS &middot; EXCLUSIVE OFFERS &middot; PROTEIN TIPS</p>
+        <div class="mk-newsletter-form"><input type="text" class="mk-newsletter-input" placeholder="your@email.com" disabled><button class="mk-newsletter-btn" disabled>Subscribe</button></div>
+      </div>
+
+      <!-- 18. Footer -->
+      <div class="mk-footer">
+        <div class="mk-footer-grid">
+          <div><h4>Shop</h4><ul><li>Cheat Bars</li><li>Protein Bars</li><li>Milkshakes</li><li>Millet Wafers</li><li>Combos</li></ul></div>
+          <div><h4>Help</h4><ul><li>FAQ</li><li>Shipping</li><li>Returns</li><li>Track Order</li><li>Contact</li></ul></div>
+          <div><h4>Company</h4><ul><li>Our Story</li><li>Journal</li><li>Careers</li><li>Press</li><li>Wholesale</li></ul></div>
+          <div><h4>Connect</h4><ul><li>Instagram</li><li>Twitter</li><li>YouTube</li><li>LinkedIn</li></ul></div>
+        </div>
+        <div class="mk-footer-bottom">&copy; 2026 PHAB &nbsp;&middot;&nbsp; ALL RIGHTS RESERVED &nbsp;&middot;&nbsp; FSSAI LIC: XXXXXXXXXX</div>
+      </div>
+
+    </div><!-- end mockup-container dir3 -->
+  </div><!-- end wireframe-device -->
+
+  <p style="text-align:center;font-size:11px;color:#999;margin-top:16px;">Prepared by Growisto for Phab &bull; Visual mockup only &bull; Not a live site</p>
+
+</body>
+</html>
